@@ -1,3 +1,0 @@
-# SmartTrashChange
-
-alvn
