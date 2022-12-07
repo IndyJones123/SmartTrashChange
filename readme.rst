@@ -31,4 +31,6 @@ Ketentuan :
 
 5.Dilarang Membuat Database baru karena sudah disediakan apabila ingin menambahkan dataset cukup ditambahkan tabel baru di database dengan nama SmartTrashChange yang berada di Repositori ini 
 
+6.Clone Repo dilakukan Di Xampp/Htdocs/FinalProject/SmartTrashChange
+
 
