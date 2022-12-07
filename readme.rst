@@ -1,71 +1,23 @@
-###################
-What is CodeIgniter
-###################
+WorkFlow Anggota Kelompok Per Tanggal 10 Desember 2022
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+Anggota Diwajibkan Menyelesaikan Fitur Sesuai JobDesk dibawah setelah batas waktu diatas 
+1. Alfian Dorif (Regis/Login/KelolaAkun) (User) (Menambahkan PanduanPengguna) (Admin)
+2. Hanif (pick up) (User)
+3. Ikhsanul (Home1/Home2) (User)
+4. Alvin (Mengelola Data Pick Up masuk (Update&Read)) (Admin)
+5. Desya (Kelola Akun (Panduan Pengguna)) (User)
+6. Pandoe (Home Admin) (Admin)
 
-*******************
-Release Information
-*******************
+Apabila Tugas Yang Telah Diberikan Tidak Ada Progress pada tanggal 10 maka akan saya Kerjakan Sendiri (Alfian) ! , dan apabila teman teman merasa tugas yang diberikan merasa kurang dipersilahkan untuk lanjut menambah fitur admin selanjutnya  !
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+Thread Ini Akan Selalu Di Update Setiap 3 Hari Sampai UAS.
 
-**************************
-Changelog and New Features
-**************************
+Ketentuan :
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
+1.Semua Nama File Yang Berada Di View Wajib Dimulai Dengan "V_" lalu huruf kecil Seperti Contoh apabila ingin membuat View PickUp maka dinamai V_pickup
+2.Semua Nama File Yang Berada Di Model Wajib Dimulai Dengan "M_" lalu huruf kecil Seperti Contoh apabila ingin membuat View PickUp maka dinamai M_pickup
+3.Semua Nama File Yang Berada Di C Wajib Dimulai Dengan Huruf Besar di depan saja dan langsung nama filenya Seperti Contoh apabila ingin membuat View PickUp maka dinamai Pickup
+4.Apabila Telah selesai menyelesaikan sebuah fitur maka segera lakukan commit di branch yang baru yang nantinya akan dilakukan Merge !
+5.Dilarang Membuat Database baru karena sudah disediakan apabila ingin menambahkan dataset cukup ditambahkan tabel baru di database dengan nama SmartTrashChange yang berada di Repositori ini 
 
-*******************
-Server Requirements
-*******************
 
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/userguide3/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Contributing Guide <https://github.com/bcit-ci/CodeIgniter/blob/develop/contributing.md>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
