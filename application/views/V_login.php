@@ -25,8 +25,7 @@
                                 <input type="password" placeholder="Password" name="Sandi" class="w-full px-4 py-2 mt-2 border rounded-md focus:outline-none focus:ring-1 focus:ring-blue-600">
                     </div>
                     <div class="flex">
-                        <button class="w-full px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">Create
-                            Account</button>
+                        <button class="w-full px-6 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-900">Login</button>
                     </div>
                     <div class="mt-6 text-grey-dark">
                         Already have an account?
