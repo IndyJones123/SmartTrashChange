@@ -9,6 +9,7 @@
 	--bg-color: #ffff;
 	--text-color: rgb(0, 0, 0);
 	--main-color: #11DB11;
+	--secondary-color: #012b01;
 }
 body{
 	min-height: 100vh;
@@ -163,6 +164,79 @@ main{
 	border-radius: 25px;
 }
 
+/* guidance */
+.guidance-option{
+	background-color: var(--secondary-color);
+	padding: 10px 20px;
+	font-size: 20px;
+	font-weight: bolder;
+	text-align: left;
+	margin-top: 20px;
+	border-radius: 10px;
+	width: 95%;
+	color: var(--bg-color);
+}
+
+.guidance-option:hover{
+	color:var(--main-color);
+}
+
+.fa-arrow-right{
+	float: right;
+	padding-top: 5px;
+}
+
+.guidance-rule-box{
+	
+	padding: 25px 45px;
+	font-size: 17px;
+	font-weight: normal;
+	text-align: justify;
+	margin-top: 20px;
+	border-radius: 10px;
+	width: 95%;
+	color: var(--text-color);
+	margin: auto;
+}
+
+.bg-grey{
+	background-color: rgba(196, 196, 196, 0.123);
+}
+
+.guidance-rule-box li{
+	list-style-type: decimal;
+	padding: 5px;
+	list-style-position: outside;
+}
+
+.jenis-dan-harga-box{
+	background-color: rgba(196, 196, 196, 0.123);
+	padding: 25px 45px;
+	font-size: 17px;
+	font-weight: normal;
+	text-align: left;
+	margin: 15px;
+	border-radius: 10px;
+	width: 30%;
+	color: var(--text-color);
+	display: inline-block;
+	vertical-align: top;
+}
+
+.jenis-dan-harga-box li{
+	list-style-type: upper-alpha;
+	list-style-position: outside;
+}
+
+
+.kategori-sampah{
+	padding: 5px 20px;
+}
+
+.kategori-sampah li{
+	list-style-type: decimal;
+	list-style-position: outside;
+}
 
 
 
