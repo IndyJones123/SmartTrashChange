@@ -2,17 +2,34 @@ WorkFlow Anggota Kelompok Per Tanggal 10 Desember 2022
 
 Anggota Diwajibkan Menyelesaikan Fitur Sesuai JobDesk dibawah setelah batas waktu diatas 
 
-1. Alfian Dorif (Regis/Login/KelolaAkun) (User) (Menambahkan PanduanPengguna) (Admin)
+1. Alfian Dorif (Regis/Login/KelolaAkun) (User) (Menambahkan PanduanPengguna) (Admin) #Selesai
 
-2. Hanif (pick up) (User)
+2. Hanif (Tampilan Semua Page) #Belum Selesai
 
-3. Ikhsanul (Home1/Home2) (User)
+3. Ikhsanul (Home1/Home2) (User) #PengerjaanSalah
 
-4. Alvin (Mengelola Data Pick Up masuk (Update&Read)) (Admin)
+4. Alvin (Mengelola Data Pick Up masuk (Update&Read)) (Admin) #PengerjaanSalah
 
-5. Desya (Kelola Akun (Panduan Pengguna)) (User)
+5. Desya (Kelola Akun (Panduan Pengguna)) (User) #PengerjaanSalah
 
-6. Pandoe (Home Admin) (Admin)
+6. Pandoe (Home Admin) (Admin) #PengerjaanSalah
+
+
+WorkFlow Anggota Kelompok Per Tanggal 13 Desember 2022
+
+Anggota Diwajibkan Menyelesaikan Fitur Sesuai JobDesk dibawah setelah batas waktu diatas 
+
+1. Alfian Dorif (Home1/Home2/Home Admin) (Admin&Driver) (CounterSampah)(Driver)
+
+2. Hanif (Tampilan Semua Page) 
+
+3. Ikhsanul (Home1/Home2) (User) (Perbaiki&Lengkapi BackEndnya)
+
+4. Alvin (Mengelola Data Pick Up masuk (Update&Read)) (Admin)  (Perbaiki&Lengkapi BackEndnya)
+
+5. Desya (Kelola Akun (Panduan Pengguna)) (User) (Perbaiki&Lengkapi BackEndnya)
+
+6. Pandoe (Home Admin) (Admin) (Perbaiki&Lengkapi BackEndnya)
 
 
 Apabila Tugas Yang Telah Diberikan Tidak Ada Progress pada tanggal 10 maka akan saya Kerjakan Sendiri (Alfian) ! , dan apabila teman teman merasa tugas yang diberikan merasa kurang dipersilahkan untuk lanjut menambah fitur admin selanjutnya  !
