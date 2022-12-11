@@ -12,7 +12,7 @@ Anggota Diwajibkan Menyelesaikan Fitur Sesuai JobDesk dibawah setelah batas wakt
 
 5. Desya (Kelola Akun (Panduan Pengguna)) (User) #PengerjaanSalah
 
-6. Pandoe (Home Admin) (Admin) #Tidak Dikerjakan 
+6. Pandoe (Home Admin) (Admin) #PengerjaanSalah
 
 
 WorkFlow Anggota Kelompok Per Tanggal 13 Desember 2022
