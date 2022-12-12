@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trashchange | ADMIN</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="style_admin.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"> 
+</head>
+
+<body>
+    <header>
+        <div class="container px-0 bg-light">
+            <div class="d-flex">
+                <div class="d-flex align-items-center " id="navbar">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="true"
+                        aria-label="Toggle navigation">
+                        <span class="fas fa-bars"></span>
+                    </button>
+                    <a class="text-decoration-none fs14 ps-2" href="home.html">Trashchange
+                        <span class="fs13 pe-2">.com</span>
+                    </a>
+                </div>
+                <div id="navbar2" class="d-flex justify-content-end pe-4"> <span class="far fa-user-circle "></span>
+                </div>
+            </div>
+            <div class="d-md-flex">
+                <ul id="navbar-items" class="p-0">
+                    <li> <span class="fas fa-comment-alt"></span> <span class="ps-3 name">Konfirmasi Pesanan</span>
+                    </li>
+                    <li> <span class="fas fa-suitcase-rolling"></span> <span class="ps-3 name">Jumlah Pesanan</span>
+                    </li>
+                    <li> <span class="fas fa-calendar-alt"></span> <span class="ps-3 name">Data pelanggan</span> </li>
+                    <li> <span class="fas fa-chart-line"></span> <span class="ps-3 name">Harga Sampah</span> </li>
+                </ul>
+                <div id="topnavbar">
+                    <div class="topnav mb-3">
+                        <div class="d-flex px-1"> 
+                            <a href="#" class="active">Daftar Pesanan</a> 
+                            <a href="#">Pesanan Gagal</a>
+                            <a href="#">Akun</a>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center mb-3 px-md-3 px-2"> <span
+                            class="text-uppercase fs13 fw-bolder pe-3">search<span class="ps-1">by</span></span>
+                        <form class="example d-flex align-items-center"> <input type="text"
+                                placeholder="Cari Sesuatu..." name="search"> <button type="submit"><i
+                                    class="fa fa-search"></i></button> </form>
+                    </div>
+                    <div class="table-responsive px-2">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col">NO</th>
+                                    <th scope="col">NAMA</th>
+                                    <th scope="col">BERAT SAMPAH</th>
+                                    <th scope="col">JENIS<span class="ps-1">SAMPAH</span></th>
+                                    <th scope="col">JUMLAH HARGA</th>
+                                    <th class="text-center" scope="col">ACTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="bg-blight">01</span></td>
+                                    <td><span>CUS 1</span></td>
+                                    <td><span>13Kg</span></td>
+                                    <td><span>Kertas</span></td>
+                                    <td><span>13000</span></td>
+                                    <td class="text-center"><span class="fas fa-ellipsis-h"></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="bg-blight">02</span></td>
+                                    <td><span>CUS 2</span></td>
+                                    <td><span>19Kg</span></td>
+                                    <td><span>Botol</span></td>
+                                    <td><span>24000</span></td>
+                                    <td class="text-center"><span class="fas fa-ellipsis-h"></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="bg-blight">03</span></td>
+                                    <td><span>CUS 3</span></td>
+                                    <td><span>5Kg</span></td>
+                                    <td><span>Kertas</span></td>
+                                    <td><span>5000</span></td>
+                                    <td class="text-center"><span class="fas fa-ellipsis-h"></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="bg-blight">04</span></td>
+                                    <td><span>CUS 4</span></td>
+                                    <td><span>10Kg</span></td>
+                                    <td><span>Logam</td>
+                                    <td><span>10000</span></td>
+                                    <td class="text-center"><span class="fas fa-ellipsis-h"></span></td>
+                                </tr>
+                                <tr>
+                                    <td><span class="bg-blight">05</span></td>
+                                    <td><span>CUS 5</span></td>
+                                    <td><span>16Kg</span></td>
+                                    <td><span>Besi dan Kertas</span></td>
+                                    <td><span>20000</span></td>
+                                    <td class="text-center"><span class="fas fa-ellipsis-h"></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between px-3 mt-3">
+                        <div class="bg-bdark fs13"> 
+                            <span>Page</span> 
+                            <input class="input-10 text-center" type="text" value="1"> 
+                                <span>
+                                <span class="px-1">of</span>
+                                1</span> 
+                        </div>
+                        <div class="d-flex justify-content-end bg-bdark fs13"> 
+                            <span class="pe-1">Show</span> 
+                            <input class="input-10" type="number" value="25"> 
+                                <span class="ps-2"><span
+                                    class="pe-2">/</span>Page</span> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Table -->
+    <main>
+
+    </main>
+    <!-- end main -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container py-4 mt-5">
+            <div class="row px-3">
+                    <div class="social-contact ">
+                        <small class="text-center mb-3">Copyright &copy; 2022. All rights reserved.</small> 
+                        <span class="fab fa-facebook"></span>
+                        <span class="fab fa-google-plus"></span>
+                        <span class="fab fa-linkedin"></span>
+                        <span class="fab fa-twitter"></span>
+                    </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
