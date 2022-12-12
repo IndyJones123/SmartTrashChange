@@ -42,7 +42,7 @@ Ketentuan :
 
 2.Semua Nama File Yang Berada Di Model Wajib Dimulai Dengan "M_" lalu huruf kecil Seperti Contoh apabila ingin membuat View PickUp maka dinamai M_pickup
 
-3.Semua Nama File Yang Berada Di C Wajib Dimulai Dengan Huruf Besar di depan saja dan langsung nama filenya Seperti Contoh apabila ingin membuat View PickUp maka dinamai Pickup
+3.Semua Nama File Yang Berada Di Controller Wajib Dimulai Dengan Huruf Besar di depan saja dan langsung nama filenya Seperti Contoh apabila ingin membuat Controller PickUp maka dinamai Pickup
 
 4.Apabila Telah selesai menyelesaikan sebuah fitur maka segera lakukan commit di branch yang baru yang nantinya akan dilakukan Merge !
 
