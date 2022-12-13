@@ -13,7 +13,9 @@
 	--secondary-color: #2f5150;
 }
 body {
-	padding: 10px;
+	
+	height: 100%;
+	padding: 20px;
 }
 .topnav {
 	background-color: var(--bg-color);
@@ -37,7 +39,7 @@ body {
 	font-size: 20px;
 	padding: 14px 16px;
 	text-decoration: none;
-	border-bottom: 3px solid transparent;
+	border-bottom: 10px solid transparent;
 }
 .topnav a:hover {
 	color: black;
@@ -113,7 +115,7 @@ form.example::after {
 #navbar {
 	width: 20%;
 	background-color: var(--secondary-color)!important;
-	height: 50px;
+	height: 70px;
 	border: none;
 }
 .bg-blight {
@@ -132,13 +134,13 @@ form.example::after {
 }
 #navbar-items {
 	width: 20%;
-	height: 500px;
+	height: 950px;
 	background-color: var(--main-color);
     opacity: 0.5;
 }
 ul#navbar-items li {
 	color: var(--bg-color);
-	padding: 15px 25px;
+	padding: 25px 35px;
 
 	font-size: 16px;
 	display: flex;
@@ -179,6 +181,11 @@ ul li:hover .fas {
 /* footer */
 
 footer {
+	position:relative;
+	margin-bottom: 100px;
+	bottom: 0;
+	width: 100%;
+	padding-bottom: 30px;
     background-color: var(--secondary-color);
     color: var(--bg-color);
 }
