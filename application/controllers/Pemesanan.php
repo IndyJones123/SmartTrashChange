@@ -20,7 +20,7 @@ class Pemesanan extends CI_Controller {
 	public function V_update($id)
 	{
 		$querydata = $this->M_pemesanan->getData($id);
-		$DATA = array('queryDetailMhs' => $querydata);
+		$DATA = array('queryData' => $querydata);
 		$this->load->view('V_update', $DATA);
 	}
 	public function fungsiTambah()
@@ -44,7 +44,7 @@ class Pemesanan extends CI_Controller {
 			'Harga' => $Harga
 		);
 
-		$this->M_pemesanan->insertDataMahasiswa($ArrInsert);
+		$this->M_pemesanan->insertdata($ArrInsert);
 		redirect(base_url(''));
 	}
 	public function fungsiEdit()
@@ -68,7 +68,7 @@ class Pemesanan extends CI_Controller {
                 'Harga' => $Harga
 			);
 
-			$this->M_pemesanan->UpdateDetailMahasiswa($ArrUpdate);
+			$this->M_pemesanan->insertdata($ArrUpdate);
 			redirect(base_url(''));
 	}
 
