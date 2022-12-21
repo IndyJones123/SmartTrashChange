@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home Admin</title>
+    <title>Daftar Sampah</title>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styleadmin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -18,8 +18,6 @@
     </script>
 
 </head>
-
-<body>
    <!-- header -->
    <div class="container px-3 bg-light">
             <div class="d-flex">
@@ -27,9 +25,8 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="true"
                         aria-label="Toggle navigation">
-
                          <!-- Sidebar toggle -->
-                                <button id="sidebarToggleTop" class="btn btn-link d-md-none
+                         <button id="sidebarToggleTop" class="btn btn-link d-md-none
                                 rounded-circle mr-3">
                                 <i class="fa fa-bars"></i>
                             </button>
@@ -44,8 +41,7 @@
             </div>
             <div class="d-md-flex">
                 <ul id="navbar-items" class="">
-
-                    <li>
+                <li>
                         <i class="fas fa-comment-alt px-2 ps-0"></i><a href="<?=site_url('homeadmin') ?>" class="nav-link active">Konfirmasi Pesanan</a>
                     </li>
                     <li>
@@ -58,95 +54,56 @@
                         <i class="fas fa-fw fa-sign-out-alt px-4 ps-0"></i><a href="<?=site_url('Welcome') ?>" class="nav-link">Logout</a>
                     </li>
                 </ul>
-                
                 <div id="topnavbar">
                     <div class="topnav mb-3">
-                        <div class="d-flex px-1"> 
-                            <a href="home_admin.html" class="active">Daftar Pesanan</a> 
-                            <a href="pesan_gagal_admin.html">Pesanan Gagal</a>
-                            <a href="pesan_berhasil_admin.html">Pesanan berhasil</a>
-                        </div>
                     </div>
                     <div class="d-flex align-items-center mb-3 px-md-3 px-2"> <span
-                            class="text-uppercase fs13 fw-bolder pe-3">search<span class="ps-1">by</span></span>
-                        <form class="example d-flex align-items-center"> <input type="text"
+                            class="text-uppercase fs13 fw-bolder pe-3 mb-3">search<span class="ps-1">by</span></span>
+                        <form class="example d-flex align-items-center mb-3"> <input type="text"
                                 placeholder="Cari Sesuatu..." name="search"> <button type="submit"><i
                                     class="fa fa-search"></i></button> </form>
                     </div>
-                    <div class="container text-center">
-                        <p class="teks-pesanan"> Konfirmasi Pemesanan </p>
+                <a href="<?=  base_url('Updatesampah/tambah') ?>" class=" ps-3 btn btn-primary btn-sm px-2 pe-3 mb-3 ">Tambah Data</a>
+                <div class="container text-center">
+                        <p class="teks-pesanan"> List Sampah </p>
                 <div class="container text-center">
                     <table class="table table-striped">
                         <thead>
                           <tr>
                             <th scope="col"> No </th>
-                            <th scope="col"> Nama </th>
-                            <th scope="col"> Alamat </th>
-                            <th scope="col"> Kategori Sampah </th>
-                            <th scope="col"> Jenis Sampah </th>
-                            <th scope="col"> Tanggal Pemesanan </th>
-                            <th scope="col"> Total Sampah </th>
+                            <th scope="col"> Kategori </th>
+                            <th scope="col"> Jenis </th>
+                            <th scope="col"> Jumlah </th>
+                            <th scope="col"> Satuan </th>
                             <th scope="col"> Harga </th>
                             <th scope="col"> Action </th>
                           </tr>
                         </thead>
-                        <tbody>
                             
+                        <?php
+                        $no = 1;
+                        foreach ($updatesampah as $ush) : ?>
                           <tr>
-                            <th scope="row">1</th>
-                            <td>Alvin</td>
-                            <td>Jl. Adirasa No.20</td>
-                            <td>Kertas</td>
-                            <td>Koran</td>
-                            <td>12 Desember 2022</td>
-                            <td>2 Kg</td>
-                            <td>Rp. 2000</td>
-                            <td><a href="pesan_berhasil_admin.html" class="btn btn-sm btn-success">Terima</a></td>
-                            <td><a href="pesan_gagal_admin.html" class="btn btn-sm btn-danger">Tolak</a></td>
+                            <td><?php echo $no++ ?></td>
+                            <td><?php echo $ush->kategori ?></td>
+                            <td><?php echo $ush->jenis ?></td>
+                            <td><?php echo $ush->satuan ?></td>
+                            <td><?php echo $ush->satuankilo ?></td>
+                            <td>Rp. <?php echo $ush->hargamin?> - <?php echo $ush->harga ?></td>
+                            <td>
+                                <a href=" <?=site_url('Updatesampah/edit/'.$ush->id)?>" class="btn btn-sm btn-success"><i class="fa fa-pencil small"></i>Update</a>
+                            </td>
+                            <td onclick="javascript: return confirm('Anda Yakin Hapus?')">
+                                <form action="<?=site_url('Updatesampah/hapus/')?>" method="post">
+                                    <input type="hidden" name="id" value="<?=$ush->id?>">
+                                    <button class="btn btn-sm btn-danger"><i class="fa fa-trash small"></i>Delete</button>
+                                </form>
+                            </td>
                           </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Pandu</td>
-                            <td>Jl. veteran nomer 35</td>
-                            <td>Kertas</td>
-                            <td>HVS</td>
-                            <td>10 Desember 2022</td>
-                            <td>2 Kg</td>
-                            <td>Rp. 4000</td>
-                            <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
-                            <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>Dorif</td>
-                            <td>Jl. kudus raya nomer 27</td>
-                            <td>Kaca</td>
-                            <td>Botol Minuman Besar</td>
-                            <td>30 Desember 2022</td>
-                            <td>5 Botol</td>
-                            <td>Rp. 5000</td>
-                            <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
-                            <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">4</th>
-                            <td>Isan</td>
-                            <td>Jl. semarang nomer 18</td>
-                            <td>Elektronik</td>
-                            <td>TV</td>
-                            <td>20 Desember 2022</td>
-                            <td>1 TV</td>
-                            <td>Rp. 100.000</td>
-                            <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
-                            <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </ol>
-                
-                    </div>
-                        </div>
-                    <div class="d-flex align-items-center justify-content-between px-3 mt-3">
+
+                          <?php endforeach; ?>
+
+                          <div class="d-flex align-items-center justify-content-between px-3 mt-3">
                         <div class="bg-bdark fs13"> 
                             <span>Page</span> 
                             <input class="input-10 text-center" type="text" value="1"> 
@@ -159,27 +116,11 @@
                             <input class="input-10" type="number" value="25"> 
                                 <span class="ps-2"><span
                                     class="pe-2">/</span>Page</span> 
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    <!-- end of header -->
-
-    <!-- footer -->
-    <footer>
-        <div class="container py-4 mt-5">
-            <div class="row px-3">
-                    <div class="social-contact ">
-                        <small class="text-center mb-3">Copyright &copy; 2022. All rights reserved.</small> 
-                        <span class="fab fa-facebook"></span>
-                        <span class="fab fa-google-plus"></span>
-                        <span class="fab fa-linkedin"></span>
-                        <span class="fab fa-twitter"></span>
-                    </div>
-            </div>
-        </div>
-    </footer>
+                        </div>
+                        
 
 <!--js link--->
 <script type="text/javascript" src="js/script.js"></script>
@@ -188,3 +129,4 @@
 </body>
 
 </html>
+
