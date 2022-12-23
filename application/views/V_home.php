@@ -18,15 +18,16 @@
 <body>
     <!-- navbar -->
     <header>
-        <a href="home.html" class="logo">
+        <a href="<?php echo base_url(); ?>home" class="logo">
             <img src="<?php echo base_url(); ?>assets/assets/logo-brand.png" alt="" />
         </a>
 
         <ul class="navbar">
-            <li><a href="home.html" class="active"> Beranda</a></li>
-            <li><a href="pesanan.html">Transaksi</a></li>
-            <li><a href="chat.html">Chat</a></li>
-            <li><a href="kelola_akun.html">Kelola Akun</a></li>
+            <li>Selamat Datang <b><?php echo $this->session->userdata('Username'); ?></b></li>
+            <li><a href="<?php echo base_url(); ?>home" class="active"> Beranda</a></li>
+            <li><a href="<?php echo base_url(); ?>Pemesanan/index">Transaksi</a></li>
+            <li><a href="<?php echo base_url(); ?>Chat/index">Chat</a></li>
+            <li><a href="<?php echo base_url(); ?>Kelolaakun/index">Kelola Akun</a></li>
         </ul>
 
         <div class="logo2">
