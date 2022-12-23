@@ -18,7 +18,7 @@
 
 </head>
 <!-- header -->
-<div class="container px-3 bg-light">
+<div class=" mt-lg-3 container px-3 bg-grey">
     <div class="d-flex">
         <div class="d-flex align-items-center " id="navbar">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
@@ -30,16 +30,15 @@
                 <!-- end\ -->
                 <span class="fas fa-bars ps-3"></span>
             </button>
-            <a class="text-decoration-none fs14 ps-3" href="">ADMIN PAGE
+            <a class="text-decoration-none fs14 ps-3" href="<?= site_url('homeadmin') ?>">ADMIN PAGE
             </a>
         </div>
-        <div id="navbar2" class="d-flex justify-content-end pe-4"> <span class="far fa-user-circle "></span>
-        </div>
+        <div id="navbar2" class="d-flex justify-content-end pe-4"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></div>
     </div>
     <div class="d-md-flex">
         <ul id="navbar-items" class="">
             <li>
-                <i class="fas fa-comment-alt px-2 ps-0"></i><a href="<?= site_url('homeadmin') ?>" class="nav-link active">Konfirmasi Pesanan</a>
+                <i class="fas fa-comment-alt px-2 ps-0"></i><a href="<?= site_url('homeadmin') ?>" class="nav-link active">History Pemesanan</a>
             </li>
             <li>
                 <i class="fas fa-calendar-alt px-2 ps-0"></i><a href="<?= site_url('updatesampah') ?>" class="nav-link">Data Pelanggan</a>
@@ -79,9 +78,6 @@
                                 <td><?php echo $data->Email ?></td>
                                 <td><?php echo $data->role_id ?></td>
                                 <td><?php echo $data->date_created ?></td>
-                                <td>
-                                    <a href=" <?= site_url('Updatesampah/edit/' . $data->id_Account) ?>" class="btn btn-sm btn-success"><i class="fa fa-pencil small"></i>Update</a>
-                                </td>
                                 <td onclick="javascript: return confirm('Anda Yakin Hapus?')">
                                     <form action="<?= base_url('Pelanggan/delete_pelanggan ' . $data->id_Account) ?>" method="post">
                                         <input type="hidden" name="id" value="<?= $data->id_Account ?>">

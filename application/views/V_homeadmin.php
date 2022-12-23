@@ -20,7 +20,7 @@
 
 <body>
     <!-- header -->
-    <div class="container px-3 bg-light">
+    <div class="mt-lg-3 container px-3 bg-grey">
         <div class="d-flex">
             <div class="d-flex align-items-center " id="navbar">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
@@ -33,11 +33,10 @@
                     <!-- end\ -->
                     <span class="fas fa-bars ps-3"></span>
                 </button>
-                <a class="text-decoration-none fs14 ps-3" href="">ADMIN PAGE
+                <a class="text-decoration-none fs14 ps-3" href="<?= site_url('homeadmin') ?>">ADMIN PAGE
                 </a>
             </div>
-            <div id="navbar2" class="d-flex justify-content-end pe-4"> <span class="far fa-user-circle "></span>
-            </div>
+            <div id="navbar2" class="d-flex justify-content-end pe-4"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></div>
         </div>
         <div class="d-md-flex">
             <ul id="navbar-items" class="">
@@ -83,7 +82,6 @@
                                 </tr>
                             </thead>
                             <tbody>
-
                                 <tr>
                                     <th scope="row">1</th>
                                     <td>Alvin</td>
