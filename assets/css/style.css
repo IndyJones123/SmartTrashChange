@@ -77,8 +77,50 @@ main {
 	z-index: 1000;
 	transition: all 0.5s ease;
 }
-.carousel-item img {
+
+#carouselExampleControls .carousel-item img {
 	margin-top: 60px;
+}
+
+#carouselExampleCaptions .carousel-item img{
+	object-fit: cover;
+	object-position: center;
+	overflow: hidden;
+	height: 800px;
+	width: 100%;
+	border-radius: 15px;
+}
+
+#carouselExampleCaptions .carousel-item:before{
+	content: "";
+	background-image: 
+		linear-gradient(
+			to bottom,
+			transparent, rgba(0,0,0,0.5)
+		);
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 800px;
+	border-radius: 15px;
+}
+
+#jenisSampahCard .card-img-top{
+	height: 220px;
+}
+
+#jenisSampahCard .card-title{
+	text-align: left;
+}
+
+#jenisSampahCard .card-text{
+	text-align: left;
+}
+
+#jenisSampahCard .card-text span{
+	font-size: 11px;
+	color: #999999;
 }
 
 /* banner */
@@ -96,18 +138,19 @@ main {
 	width: 50px;
 }
 
-.logo3 {
-	position: absolute;
-	top: 106%;
+.logo3 img{
+	position: fixed;
+	width: 15%;
+	bottom: 0%;
 }
 
 .rekomendasi {
-	background-color: var(--secondary-color);
-	color: var(--bg-color);
-	font-weight: bolder;
-	padding: 10px;
 	margin-top: 60px;
-	border-radius: 30px;
+	width: 600px;
+}
+
+.rekomendasi hr {
+	border-top: 3px solid var(--main-color);
 }
 
 .iklan3 {
@@ -272,7 +315,7 @@ main {
 }
 .logo-footer img {
 	position: absolute;
-	bottom: 340px;
+	bottom: 260px;
 	margin-left: 10px;
 }
 

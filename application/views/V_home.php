@@ -18,15 +18,16 @@
 <body>
     <!-- navbar -->
     <header>
-        <a href="home.html" class="logo">
+        <a href="<?php echo base_url(); ?>home" class="logo">
             <img src="<?php echo base_url(); ?>assets/assets/logo-brand.png" alt="" />
         </a>
 
         <ul class="navbar">
-            <li><a href="home.html" class="active"> Beranda</a></li>
-            <li><a href="pesanan.html">Transaksi</a></li>
-            <li><a href="chat.html">Chat</a></li>
-            <li><a href="kelola_akun.html">Kelola Akun</a></li>
+            <li>Selamat Datang <b><?php echo $this->session->userdata('Username'); ?></b></li>
+            <li><a href="<?php echo base_url(); ?>home" class="active"> Beranda</a></li>
+            <li><a href="<?php echo base_url(); ?>Pemesanan/index">Transaksi</a></li>
+            <li><a href="<?php echo base_url(); ?>Chat/index">Chat</a></li>
+            <li><a href="<?php echo base_url(); ?>Kelolaakun/index">Kelola Akun</a></li>
         </ul>
 
         <div class="logo2">
@@ -42,6 +43,11 @@
     <main>
         <!-- iklan1 -->
         <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="<?php echo base_url(); ?>assets/assets/banner1.png" class="d-block w-100" alt="..." />
@@ -49,18 +55,10 @@
                 <div class="carousel-item">
                     <img src="<?php echo base_url(); ?>assets/assets/banner1.png" class="d-block w-100" alt="..." />
                 </div>
+                <div class="carousel-item">
+                    <img src="<?php echo base_url(); ?>assets/assets/banner1.png" class="d-block w-100" alt="..." />
+                </div>
             </div>
-
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-
         </div>
         <!-- iklan 1 end -->
 
@@ -99,40 +97,44 @@
         </div>
         <!-- kategori end -->
 
-        <!-- iklan 2-->
-        <div class="container mt-5">
-            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="<?php echo base_url(); ?>assets/assets/iklan-baner.png" class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="<?php echo base_url(); ?>assets/assets/iklan-baner.png" class="d-block w-100" alt="..." />
-                    </div>
-                    <div class="carousel-item">
-                        <img src="<?php echo base_url(); ?>assets/assets/iklan-baner.png " class="d-block w-100" alt="..." />
-                    </div>
-                </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-
+        <!-- rekomendasi -->
+        <div class="container">
+            <div class="rekomendasi">
+                <h3>Jenis sampah yang kami terima</h3>
+                <hr>
             </div>
         </div>
-        <!-- END -->
+        <!-- end -->
+
+
+        <!-- jenis sampah card -->
+        <div id="jenisSampahCard" class="container mt-5 text-center">
+            <div class="card w-25 d-inline-block m-3">
+                <img src="<?php echo base_url(); ?>assets/assets/sampah1.jpg" class="card-img-top" alt="...">
+                <div class="m-3">
+                    <h5 class="card-title">Kertas</h5>
+                    <p class="card-text">Up to Rp5000,- <span>/kg</span></p>
+                    <p class="card-text"><small class="text-muted">Kertas banyak ditemui di sampah perkantoran. Sampah kertas bisa berupa koran, majalah, dan sebagainya.</small></p>
+                </div>
+            </div>
+            <div class="card w-25 d-inline-block m-3">
+                <img src="<?php echo base_url(); ?>assets/assets/sampah2.jpg" class="card-img-top" alt="...">
+                <div class="m-3">
+                    <h5 class="card-title">Kaca</h5>
+                    <p class="card-text">Up to Rp10000,- <span>/unit</span></p>
+                    <p class="card-text"><small class="text-muted">Restoran dan rumah tangga merupakan sumber sampah kaca yang biasanya berupa botol kaca bekas.</small></p>
+                </div>
+            </div>
+            <div class="card w-25 d-inline-block m-3">
+                <img src="<?php echo base_url(); ?>assets/assets/sampah3.jpg" class="card-img-top" alt="...">
+                <div class="m-3">
+                    <h5 class="card-title">Elektronik</h5>
+                    <p class="card-text">Up to Rp200000,- <span>/unit</span></p>
+                    <p class="card-text"><small class="text-muted">Barang elektronik yang telah rusak, seperti mesin cuci, kipas angin, dan lain-lain sering kali terbengkalai.</small></p>
+                </div>
+            </div>
+        </div>
+        <!-- end -->
 
         <!-- logo 3 -->
         <div class="logo3">
@@ -141,97 +143,10 @@
             </a>
         </div>
         <!-- end -->
-
-        <!-- rekomendasi -->
-        <div class="container">
-            <div class="rekomendasi text-center">
-                <h3>Rekomendasi</h3>
-            </div>
-        </div>
-        <!-- end -->
-
-        <!-- iklan 3 -->
-        <div class="container mt-5">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="<?php echo base_url(); ?>assets/assets/iklan 1.png" class="d-block w-50" alt="..." />
-                    </div>
-                </div>
-            </div>
-
-            <div class="iklan3">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="<?php echo base_url(); ?>assets/assets/iklan 2.png" class="d-block w-100" alt="..." />
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="iklan4">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="<?php echo base_url(); ?>assets/assets/iklan 2.png" class="d-block w-100" alt="..." />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--  end -->
-
-        <!-- iklan 4 -->
-        <div class="container mt-5">
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="<?php echo base_url(); ?>assets/assets/iklan-baner.png" class="d-block w-100" alt="..." />
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>
-                                Some representative placeholder content for the first slide.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="carousel-item">
-                        <img src="assets/iklan4.png" class="d-block w-100" alt="..." />
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>
-                                Some representative placeholder content for the second slide.
-                            </p>
-                        </div>
-                    </div>
-
-                </div>
-
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-
-            </div>
-        </div>
-        <!-- end -->
     </main>
 
     <!-- footer -->
     <footer>
-
         <div id="container">
             <div class="main-content">
                 <div class="logo-footer">

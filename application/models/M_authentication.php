@@ -24,7 +24,7 @@ class M_authentication extends CI_Model
 
     function add_account()
     {
-
+        date_default_timezone_set('Asia/Karachi');
         $Username = $this->input->post('Username');
         $Email = $this->input->post('Email');
         $Password = $this->input->post('Sandi');
@@ -35,7 +35,7 @@ class M_authentication extends CI_Model
             'Sandi' => $Password,
             'role_id' => 0,
             'is_active' => 1,
-            'date_created' => time()
+            'date_created' => date('Y-m-d')
         );
         $this->db->insert('account', $data);
     }

@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TrashChange | CHAT</title>
-    <link rel="stylesheet" href="View HTML/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>View HTML/css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -19,18 +19,18 @@
     <!-- navbar -->
     <header>
         <a href="home.html" class="logo">
-            <img src="assets/logo-brand.png" alt="">
+            <img src="<?php echo base_url(); ?>assets/assets/logo-brand.png" alt="">
         </a>
 
         <ul class="navbar">
-            <li><a href="home.html"> Beranda</a></li>
-            <li><a href="pesanan.html">Transaksi</a></li>
-            <li><a href="chat.html" class="active">Chat</a></li>
-            <li><a href="kelola_akun.html">Kelola Akun</a></li>
+            <li><a href="<?php echo base_url(); ?>Home"> Beranda</a></li>
+            <li><a href="<?php echo base_url(); ?>Pemesanan/index">Transaksi</a></li>
+            <li><a href="<?php echo base_url(); ?>Chat/index" class="active">Chat</a></li>
+            <li><a href="<?php echo base_url(); ?>Kelolaakun/index">Kelola Akun</a></li>
         </ul>
         <div class="logo2">
             <a href="#">
-                <img src="assets/icon-navbar.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/assets/icon-navbar.png" alt="">
             </a>
         </div>
         <div class="bx bx-menu" id="menu-icon"></div>
@@ -57,6 +57,12 @@
         })();
     </script>
 
+    <div class="konten-chat text-center">
+        <img src="View HTML/assets/image_chat_available.png" alt="">
+        <p class="p1 mt-3">Chat Berada di Pojok Kanan Bawah</p>
+        <p>Ayo Mulai Mengirim Pesan !</p>
+    </div>
+
     <!-- end -->
     <!-- footer -->
     <footer>
@@ -64,9 +70,8 @@
         <div id="container">
             <div class="main-content">
                 <div class="logo-footer">
-                    <img src="assets/logo.png" alt="">
+                    <img src="<?php echo base_url(); ?>assets/assets/logo.png" alt="">
                 </div>
-
                 <div class="left box">
                     <h2>About us</h2>
                     <div class="content">
@@ -111,25 +116,7 @@
                     </div>
                 </div>
 
-                <div class="right box">
-                    <h2>Login</h2>
-                    <div class="content">
-                        <form action="#">
-                            <div class="email">
-                                <div class="text">Email *</div>
-                                <input type="email" required>
-                            </div>
-                            <div class="msg">
-                                <div class="text">Password *</div>
-                                <input type="password" required>
-                            </div>
-                            <div class="btn">
-                                <button type="button" class="btn btn-light">Login</button>
-                            </div>
-                        </form>
-                        <span class="mt-5">Belum punya akun? <a href="#">Daftar Disini</a></span>
-                    </div>
-                </div>
+
             </div>
 
             <div class="bottom">
@@ -138,13 +125,13 @@
                     <span class="far fa-copyright"></span><span> 2022 All rights reserved.</span>
                 </center>
             </div>
-        </div>
 
+        </div>
     </footer>
     <!-- end -->
 
     <!--js link--->
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/script.js"></script>
     <!-- js bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
