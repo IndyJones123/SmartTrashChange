@@ -53,9 +53,12 @@ class Registration extends CI_Controller
 						if ($this->session->userdata('role_id') == "1") {
 							$data['hosting'] = $this->M_home->get_hosting();
 							$this->load->view("V_homeadmin", $data);
-						} else {
+						} elseif (($this->session->userdata('role_id') == "0")) {
 							$data['hosting'] = $this->M_home->get_hosting();
 							$this->load->view("V_home", $data);
+						} elseif (($this->session->userdata('role_id') == "2")) {
+							$data['hosting'] = $this->M_home->get_hosting();
+							$this->load->view("Driver/V_HomeDriver", $data);
 						}
 					} else {
 						echo "<script>alert('Maaf Username Belum Aktif.');</script>";

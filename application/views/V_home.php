@@ -23,7 +23,7 @@
         </a>
 
         <ul class="navbar">
-            <li>Selamat Datang <b><?php echo $this->session->userdata('Username'); ?></b></li>
+            <li>Hai! <b><?php echo $this->session->userdata('Username'); ?></b></li>
             <li><a href="<?php echo base_url(); ?>home" class="active"> Beranda</a></li>
             <li><a href="<?php echo base_url(); ?>Pemesanan/index">Transaksi</a></li>
             <li><a href="<?php echo base_url(); ?>Chat/index">Chat</a></li>
@@ -100,8 +100,7 @@
         <!-- rekomendasi -->
         <div class="container">
             <div class="rekomendasi">
-                <h3>Jenis sampah yang kami terima</h3>
-                <hr>
+                <h3 style="text-align: center;">Sample Jenis Sampah</h3>
             </div>
         </div>
         <!-- end -->
@@ -136,22 +135,14 @@
         </div>
         <!-- end -->
 
-        <!-- logo 3 -->
-        <div class="logo3">
-            <a href="#">
-                <img src="<?php echo base_url(); ?>assets/assets/icon footer.png" alt="" />
-            </a>
-        </div>
-        <!-- end -->
+
     </main>
 
     <!-- footer -->
     <footer>
         <div id="container">
             <div class="main-content">
-                <div class="logo-footer">
-                    <img src="<?php echo base_url(); ?>assets/assets/logo.png" alt="">
-                </div>
+
                 <div class="left box">
                     <h2>About us</h2>
                     <div class="content">
