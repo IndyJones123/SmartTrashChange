@@ -19,8 +19,8 @@
 
 </head>
    <!-- header -->
-   <div class="container px-3 bg-light">
-            <div class="d-flex">
+   <div class="mt-lg-3 container px-3 bg-grey">
+            <div class="d-flex pt-3">
                 <div class="d-flex align-items-center " id="navbar">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="true"
@@ -33,16 +33,15 @@
                          <!-- end\ -->
                         <span class="fas fa-bars ps-3"></span>
                     </button>
-                    <a class="text-decoration-none fs14 ps-3" href="">ADMINISTRATOR
+                    <a class="text-decoration-none fs14 ps-3" href="<?= site_url('homeadmin') ?>">ADMIN PAGE
                     </a>
                 </div>
-                <div id="navbar2" class="d-flex justify-content-end pe-4"> <span class="far fa-user-circle "></span>
-                </div>
+                <div id="navbar2" class="d-flex justify-content-end pe-4"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></div>
             </div>
             <div class="d-md-flex">
                 <ul id="navbar-items" class="">
                 <li>
-                        <i class="fas fa-comment-alt px-2 ps-0"></i><a href="<?=site_url('homeadmin') ?>" class="nav-link active">Konfirmasi Pesanan</a>
+                        <i class="fas fa-comment-alt px-2 ps-0"></i><a href="<?=site_url('homeadmin') ?>" class="nav-link active">History Pemesanan</a>
                     </li>
                     <li>
                         <i class="fas fa-calendar-alt px-2 ps-0"></i><a href="<?=site_url('updatesampah') ?>" class="nav-link">Data Pelanggan</a>
@@ -55,7 +54,7 @@
                     </li>
                 </ul>
 
-                <div class="container-fluid ps-3">
+                <div class="mt-3 container-fluid ps-3">
                 <h3 class="col-sm-5 ps-3">Halaman Tambah Data</h3>
                 <hr>
                 <br>
@@ -64,35 +63,35 @@
                     <input type="hidden" name="id" value="<?php echo $loaddata['id']; ?>">
                     
                     <div class="form-group row">
-                        <label for="kategori" class="col-sm-2 col-form-label">Kategori</label>
+                        <label for="kategori" class="col-md-2 mt-3 col-form-label">Kategori</label>
                         <div class="col-sm-5">
                             <input type="text" class="form-control" name="kategori" value="<?php echo $loaddata['kategori']; ?>">
                         </div>
                     </div>
 
                     <div class="form-group row">
-                        <label for="jenis" class="col-sm-2 col-form-label">Jenis</label>
+                        <label for="jenis" class="col-md-2 mt-3 col-form-label">Jenis</label>
                         <div class="col-sm-5">
                             <input type="text" class="form-control" name="jenis" value="<?php echo $loaddata ['jenis']; ?>">
                         </div>
                     </div>
 
                     <div class="form-group row">
-                        <label for="satuan" class="col-sm-2 col-form-label">Jumlah</label>
+                        <label for="satuan" class="col-md-2 mt-3 col-form-label">Jumlah</label>
                         <div class="col-sm-5">
                             <input type="number" class="form-control" name="satuan" value="<?php echo $loaddata ['satuan']; ?>">
                         </div>
                     </div>
 
                     <div class="form-group row">
-                        <label for="satuankilo" class="col-sm-2 col-form-label">Satuan</label>
+                        <label for="satuankilo" class="col-md-2 mt-3 col-form-label">Satuan</label>
                         <div class="col-sm-5">
                             <input type="text" class="form-control" name="satuankilo" value="<?php echo $loaddata ['satuankilo']; ?>">
                         </div>
                     </div>
 
                     <div class="form-group row">
-                        <label for="hargamin" class="col-sm-2 col-form-label">Harga Minimum
+                        <label for="hargamin" class="col-md-2 mt-3 col-form-label">Harga Minimum
                         </label>
                         <div class="col-sm-5">
                             <input type="number" class="form-control" name="hargamin" value="<?php echo $loaddata ['hargamin']; ?>">
@@ -100,14 +99,14 @@
                     </div>
 
                     <div class="form-group row ">
-                        <label for="harga" class="col-sm-2 col-form-label">Harga Maximum</label>
+                        <label for="harga" class="col-md-2 mt-3 col-form-label">Harga Maximum</label>
                         <div class="col-sm-5">
                             <input type="number" class="form-control" name="harga" value="<?php echo $loaddata ['harga']; ?>">
                         </div>
                     </div>
 
                     <div class="form-group row ">
-                        <label for="harga" class="col-sm-2 col-form-label"></label>
+                        <label for="harga" class="col-md-2 mt-3 col-form-label"></label>
                         <div class="col-sm-5">
                             <button type="submit" class="btn btn-primary">Ubah</button>
                             <button type="reset" class="btn btn-danger">Cancel</button>

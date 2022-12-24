@@ -20,7 +20,7 @@
 
 <body>
     <!-- header -->
-    <div class="container px-3 bg-light">
+    <div class="mt-lg-3 container px-3 bg-grey">
         <div class="d-flex">
             <div class="d-flex align-items-center " id="navbar">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
@@ -33,11 +33,10 @@
                     <!-- end\ -->
                     <span class="fas fa-bars ps-3"></span>
                 </button>
-                <a class="text-decoration-none fs14 ps-3" href="">ADMIN PAGE
+                <a class="text-decoration-none fs14 ps-3" href="<?= site_url('homeadmin') ?>">ADMIN PAGE
                 </a>
             </div>
-            <div id="navbar2" class="d-flex justify-content-end pe-4"> <span class="far fa-user-circle "></span>
-            </div>
+            <div id="navbar2" class="d-flex justify-content-end pe-4"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></div>
         </div>
         <div class="d-md-flex">
             <ul id="navbar-items" class="">
@@ -83,55 +82,78 @@
                                 </tr>
                             </thead>
                             <tbody>
-
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Alvin</td>
-                                    <td>Jl. Adirasa No.20</td>
-                                    <td>Kertas</td>
-                                    <td>Koran</td>
-                                    <td>12 Desember 2022</td>
-                                    <td>2 Kg</td>
-                                    <td>Rp. 2000</td>
-                                    <td><a href="pesan_berhasil_admin.html" class="btn btn-sm btn-success">Terima</a></td>
-                                    <td><a href="pesan_gagal_admin.html" class="btn btn-sm btn-danger">Tolak</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>Pandu</td>
-                                    <td>Jl. veteran nomer 35</td>
-                                    <td>Kertas</td>
-                                    <td>HVS</td>
-                                    <td>10 Desember 2022</td>
-                                    <td>2 Kg</td>
-                                    <td>Rp. 4000</td>
-                                    <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
-                                    <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">3</th>
-                                    <td>Dorif</td>
-                                    <td>Jl. kudus raya nomer 27</td>
-                                    <td>Kaca</td>
-                                    <td>Botol Minuman Besar</td>
-                                    <td>30 Desember 2022</td>
-                                    <td>5 Botol</td>
-                                    <td>Rp. 5000</td>
-                                    <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
-                                    <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">4</th>
-                                    <td>Isan</td>
-                                    <td>Jl. semarang nomer 18</td>
-                                    <td>Elektronik</td>
-                                    <td>TV</td>
-                                    <td>20 Desember 2022</td>
-                                    <td>1 TV</td>
-                                    <td>Rp. 100.000</td>
-                                    <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
-                                    <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
-                                </tr>
+                            <tr>
+                            <th scope="row">1</th>
+                            <td>Alvin</td>
+                            <td>Jl. Adirasa No.20</td>
+                            <td>Kertas</td>
+                            <td>Koran</td>
+                            <td>12 Desember 2022</td>
+                            <td>2 Kg</td>
+                            <td>Rp. 2000</td>
+                            <td><a href="pesan_berhasil_admin.html" class="btn btn-sm btn-success">Terima</a></td>
+                            <td><a href="pesan_gagal_admin.html" class="btn btn-sm btn-danger">Tolak</a></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">2</th>
+                            <td>Pandu</td>
+                            <td>Jl. veteran nomer 35</td>
+                            <td>Kertas</td>
+                            <td>HVS</td>
+                            <td>10 Desember 2022</td>
+                            <td>2 Kg</td>
+                            <td>Rp. 4000</td>
+                            <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
+                            <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">3</th>
+                            <td>Dorif</td>
+                            <td>Jl. kudus raya nomer 27</td>
+                            <td>Kaca</td>
+                            <td>Botol Minuman Besar</td>
+                            <td>30 Desember 2022</td>
+                            <td>5 Botol</td>
+                            <td>Rp. 5000</td>
+                            <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
+                            <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">4</th>
+                            <td>Isan</td>
+                            <td>Jl. semarang nomer 18</td>
+                            <td>Elektronik</td>
+                            <td>TV</td>
+                            <td>20 Desember 2022</td>
+                            <td>1 TV</td>
+                            <td>Rp. 100.000</td>
+                            <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
+                            <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
+                        </tr>    
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>Hanif</td>
+                            <td>Jl. kertajaya nomer 15</td>
+                            <td>plastik</td>
+                            <td>gelas</td>
+                            <td>5 Desember 2022</td>
+                            <td>10 gelas plastik</td>
+                            <td>Rp. 10.000</td>
+                            <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
+                            <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">6</th>
+                            <td>Desya</td>
+                            <td>Jl. Rungkut nomer 76</td>
+                            <td>aluminium</td>
+                            <td>panci</td>
+                            <td>1 Desember 2022</td>
+                            <td>3 panci </td>
+                            <td>Rp. 35.000</td>
+                            <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
+                            <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
+                        </tr>
                             </tbody>
                         </table>
                         </ol>

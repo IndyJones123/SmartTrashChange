@@ -20,7 +20,7 @@ body {
 
 /* navber */
 header {
-	position: fixed;
+	position: relative;
 	width: 100%;
 	top: 0;
 	right: 0;
@@ -36,6 +36,8 @@ header {
 .logo img {
 	width: 50%;
 	margin-top: 30px;
+	position: relative;
+	left: -90px;
 }
 .navbar {
 	display: flex;
@@ -65,9 +67,10 @@ header {
 }
 
 .logo2 img {
-	position: fixed;
+	position: absolute;
 	width: 15%;
-	top: -1%;
+	top: -5px;
+	right: 2px;
 }
 /* navbar */
 
@@ -98,7 +101,7 @@ main {
 
 .logo3 {
 	position: absolute;
-	top: 106%;
+	top: 112.5%;
 }
 
 .rekomendasi {
@@ -115,7 +118,6 @@ main {
 	width: 40%;
 	right: 90px;
 	bottom: -37rem;
-	bottom: -37.9rem;
 }
 
 .iklan4 {
@@ -134,7 +136,7 @@ main {
 	font-size: 20px;
 	font-weight: bolder;
 	color: var(--bg-color);
-	margin-top: 140px;
+	margin-top: 10px;
 	border-radius: 25px;
 }
 
@@ -274,6 +276,7 @@ main {
 	position: absolute;
 	bottom: 260px;
 	margin-left: 10px;
+	margin-bottom: 15px;
 }
 
 footer {
@@ -316,6 +319,7 @@ footer {
 }
 .left .content .social {
 	margin: 20px 0 0 0;
+	color: var(--main-color);
 }
 .left .content .social a {
 	padding: 0 2px;
@@ -324,6 +328,7 @@ footer {
 	height: 40px;
 	width: 40px;
 	background: var(--bg-color);
+	color: var(--secondary-color);
 	line-height: 40px;
 	text-align: center;
 	font-size: 18px;
@@ -332,10 +337,11 @@ footer {
 }
 .left .content .social a span:hover {
 	background: var(--main-color);
+	color: var(--bg-color);
 }
 .center .content .fas {
 	font-size: 1.4375rem;
-	background: #1a1a1a;
+	background: var(--text-color);
 	height: 45px;
 	width: 45px;
 	line-height: 45px;
@@ -343,6 +349,9 @@ footer {
 	border-radius: 50%;
 	transition: 0.3s;
 	cursor: pointer;
+}
+.center1{
+	padding-left: 155px !important;
 }
 .center .content .fas:hover {
 	background: var(--main-color);
@@ -359,63 +368,20 @@ footer {
 	color: var(--bg-color);
 }
 
-.list-link * :hover {
+.list-link a:hover {
 	color: var(--main-color);
 }
 .center .content .phone {
 	margin: 15px 0;
 }
-.right form .text {
-	font-size: 15px;
-	margin-bottom: 2px;
-	color: #999999;
-}
-.right form .msg {
-	margin-top: 10px;
-}
-.right form input {
-	width: 100%;
-	font-size: 15px;
-	background: var(--bg-color);
-	padding-left: 10px;
-	border: 1px solid #222222;
-}
-.right form input:focus {
-	outline-color: var(--main-color);
-}
-.right form input {
-	height: 40px;
-}
-.right form .btn {
-	margin-top: 5px;
-	color: var(--main-color);
-	padding: 0px 100px;
-	position: relative;
-	right: 50px;
-	margin-bottom: 10px;
-}
-.right form .btn button {
-	height: 40px;
-	width: 100%;
-	border: none;
-	outline: none;
-	background: var(--bg-color);
-	font-size: 15px;
-	font-weight: 500;
-	cursor: pointer;
-	transition: 0.3s;
-}
-.right form .btn button:hover {
-	background: var(--main-color);
-	color: var(--bg-color);
-}
+
 .bottom center {
 	padding: 10px;
 	font-size: 14px;
 	background: #151515;
 }
 .bottom center span {
-	color: #656565;
+	color: grey;
 }
 
 /* end footer */
@@ -446,6 +412,10 @@ footer {
 	display: block;
 	margin: 5px;
 }
+.card1{
+	position: relative;
+	bottom: 75vh;
+}
 .card-body1 {
 	color: var(--main-color);
 }
@@ -459,7 +429,10 @@ footer {
 .card-body h3 {
 	font-weight: bold;
 }
-
+.card2{
+	position: relative;
+	bottom: 73vh;
+}
 .card-body2 {
 	margin-left: 70px;
 }
@@ -511,7 +484,14 @@ footer {
 .teks-tentangkami {
 	text-align: justify;
 }
-
+.panduan{
+	position: relative;
+	bottom: 57vh;
+}
+.text-exit{
+	position: relative;
+	bottom: 55vh;
+}
 .text-exit i {
 	padding-top: 20px;
 	color: red;
@@ -685,6 +665,7 @@ footer {
 @media (max-width: 1090px) {
 	.logo img {
 		width: 50%;
+		left: 15px;
 	}
 	#menu-icon {
 		display: block;
@@ -733,6 +714,9 @@ footer {
 	footer {
 		position: relative;
 		bottom: 0px;
+	}
+	.center1{
+		padding-left: 20px !important;	
 	}
 	.logo-footer img {
 		position: relative;
