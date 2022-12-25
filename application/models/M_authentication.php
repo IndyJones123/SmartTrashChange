@@ -35,7 +35,13 @@ class M_authentication extends CI_Model
             'Sandi' => $Password,
             'role_id' => 0,
             'is_active' => 1,
-            'date_created' => date('Y-m-d')
+            'date_created' => date('Y-m-d'),
+            'namadepan' => "",
+            'namabelakang' => "",
+            'TcPoints' => 0,
+            'notelepon' => "",
+            'alamat' => "",
+            'jeniskelamin' => ""
         );
         $this->db->insert('account', $data);
     }

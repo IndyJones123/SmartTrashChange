@@ -23,7 +23,7 @@
         </a>
 
         <ul class="navbar">
-            <li>Hai! <b><?php echo $this->session->userdata('Username'); ?></b></li>
+
             <li><a href="<?php echo base_url(); ?>home" class="active"> Beranda</a></li>
             <li><a href="<?php echo base_url(); ?>Pemesanan/index">Transaksi</a></li>
             <li><a href="<?php echo base_url(); ?>Chat/index">Chat</a></li>
@@ -41,6 +41,7 @@
 
     <!-- end -->
     <main>
+
         <!-- iklan1 -->
         <div id="carouselExampleControls" class="carousel slide mt-5" data-bs-ride="carousel">
             <div class="carousel-indicators">
@@ -64,6 +65,8 @@
 
         <!-- kategori -->
         <div class="container mt-5">
+            <li style="text-align: center;">Selamat Datang ! <b><?php echo $this->session->userdata('Username'); ?></b></li>
+            <br><br>
             <div class="row justify-content-around g-0 text-center">
                 <div class="col-md-3">
                     <div class="menu-kategori">
@@ -75,20 +78,13 @@
                 <div class="col-md-3">
                     <div class="menu-kategori">
                         <a href="dropoff.html"><img src="<?php echo base_url(); ?>assets/assets/icon_dropoff.png" class="img-kategori" /></a>
-                        <p class="mt-2">Drop Off</p>
+                        <p class="mt-2">Donasi</p>
                     </div>
                 </div>
 
                 <div class="col-md-3">
                     <div class="menu-kategori">
-                        <a href="tcbox.html"><img src="<?php echo base_url(); ?>assets/assets/icon_tcbox.png" class="img-kategori" /></a>
-                        <p class="mt-2">Tc Box</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="menu-kategori">
-                        <a href="tentangkami.html"><img src="<?php echo base_url(); ?>assets/assets/ixon_ttgkami.png" class="img-kategori" /></a>
+                        <a href="<?php echo base_url() ?>Tentangkami"><img src="<?php echo base_url(); ?>assets/assets/ixon_ttgkami.png" class="img-kategori" /></a>
                         <p class="mt-2">Tentang Kami</p>
                     </div>
                 </div>
@@ -161,10 +157,10 @@
                     <h2>Link Terkait</h2>
                     <div class="content">
                         <ul class="list-link">
-                            <li><a href="home.html">Beranda</a></li>
-                            <li><a href="pesanan.html">Transaksi</a></li>
-                            <li><a href="chat.html">chat</a></li>
-                            <li><a href="kelola_akun.html">kelola Akun</a></li>
+                            <li><a href="<?php echo base_url(); ?>home" class="active"> Beranda</a></li>
+                            <li><a href="<?php echo base_url(); ?>Pemesanan/index">Transaksi</a></li>
+                            <li><a href="<?php echo base_url(); ?>Chat/index">Chat</a></li>
+                            <li><a href="<?php echo base_url(); ?>Kelolaakun/index">Kelola Akun</a></li>
                         </ul>
                     </div>
                 </div>

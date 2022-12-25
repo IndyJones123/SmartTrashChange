@@ -62,7 +62,7 @@
                                 <div class="card-body2">
                                     <a href="#">
                                         <img src="<?php echo base_url(); ?>assets/assets/tc-poin.png" alt="">
-                                        <p> Tc Points :</p>
+                                        <p> Tc Points : <?php echo $this->session->userdata('TcPoints'); ?></p>
                                     </a>
                                 </div>
                             </div>
@@ -87,34 +87,33 @@
                                 <form class="row g-3">
                                     <div class="col-md-6 mt-5">
                                         <label for="nama_depan" class="form-label">Nama Depan</label>
-                                        <input type="nama_depan" class="form-control" id="inputnama_depan">
+                                        <input type="nama_depan" class="form-control" id="inputnama_depan" value="<?php echo $this->session->userdata('namadepan'); ?>">
                                     </div>
                                     <div class="col-md-6 mt-5">
                                         <label for="nama_belakang" class="form-label">Nama Belakang</label>
-                                        <input type="nama_belakang" class="form-control" id="inputnama_belakang">
+                                        <input type="nama_belakang" class="form-control" id="inputnama_belakang" value="<?php echo $this->session->userdata('namabelakang'); ?>">
                                     </div>
 
-                                    <div class="btn-kelamin">
-                                        <p>Jenis Kelamin</p>
-                                        <button type="submit" class="btn btn-outline-success">Laki-Laki</button>
-                                        <button type="submit" class="btn btn-outline-success">Perempuan</button>
+                                    <div class="col-md-6 mt-5">
+                                        <label for="nama_belakang" class="form-label">Jenis Kelamin (L/P)</label>
+                                        <input type="nama_belakang" class="form-control" id="inputnama_belakang" value="<?php echo $this->session->userdata('jeniskelamin'); ?>">
                                     </div>
                                     <div>
                                         <label for="exampleInputEmail1" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com">
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com" value="<?php echo $this->session->userdata('Email'); ?>">
                                     </div>
                                     <div>
                                         <label for="exampleInputPassword1" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="***********">
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="***********" value="<?php echo $this->session->userdata('Sandi'); ?>">
                                     </div>
                                     <div>
                                         <label for="exampleInputnumber" class="form-label">No Telepon</label>
-                                        <input type="text" class="form-control" id="exampleInputnumber" placeholder="08xxxxxxxx">
+                                        <input type="text" class="form-control" id="exampleInputnumber" placeholder="08xxxxxxxx" value="<?php echo $this->session->userdata('notelepon'); ?>">
                                     </div>
 
                                     <div>
                                         <label for="exampleFormControlTextarea1" class="form-label">Alamat</label>
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Masukkan Alamat"></textarea>
+                                        <input class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Masukkan Alamat" value="<?php echo $this->session->userdata('alamat'); ?>"></input>
                                     </div>
 
                                     <div class="mb-3">

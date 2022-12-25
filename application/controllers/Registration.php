@@ -49,6 +49,12 @@ class Registration extends CI_Controller
 						$this->session->set_userdata('Sandi', $row->Sandi);
 						$this->session->set_userdata('Email', $row->Email);
 						$this->session->set_userdata('role_id', $row->role_id);
+						$this->session->set_userdata('namadepan', $row->namadepan);
+						$this->session->set_userdata('namabelakang', $row->namabelakang);
+						$this->session->set_userdata('notelepon', $row->notelepon);
+						$this->session->set_userdata('alamat', $row->alamat);
+						$this->session->set_userdata('jeniskelamin', $row->jeniskelamin);
+						$this->session->set_userdata('TcPoints', $row->TcPoints);
 
 						if ($this->session->userdata('role_id') == "1") {
 							$data['hosting'] = $this->M_home->get_hosting();
@@ -93,5 +99,13 @@ class Registration extends CI_Controller
 			echo "<script>alert('Data Yang Telah Anda Masukkan Berhasil');</script>";
 			$this->viewlogin();
 		}
+	}
+
+	public function logout()
+	{
+		// destroy the session
+		$this->session->sess_destroy();
+		// redirect to the login page
+		redirect('Welcome');
 	}
 }

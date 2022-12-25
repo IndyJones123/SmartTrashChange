@@ -18,7 +18,7 @@
 
     <!-- navbar -->
     <header>
-        <a href="home.html" class="logo">
+        <a href="<?php echo base_url(); ?>Home" class="logo">
             <img src="<?php echo base_url(); ?>assets/assets/logo-brand.png" alt="">
         </a>
 

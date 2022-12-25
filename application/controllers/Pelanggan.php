@@ -21,4 +21,15 @@ class Pelanggan extends CI_Controller
         $this->M_pelanggan->delete_pelanggan($id_pelanggan);
         redirect('Pelanggan');
     }
+    public function update_data($id_pelanggan = null)
+    {
+        if ($this->input->post()) {
+            $data_pelanggan = $this->input->post();
+            $this->m_pelanggan->update_data($data_pelanggan);
+            redirect('Pelanggan');
+        } else {
+            $data_update['hosting'] = $this->M_pelanggan->get_mahasiswa_spesifik($id_pelanggan);
+            $this->load->view('V_editpelanggan', $data_update);
+        }
+    }
 }

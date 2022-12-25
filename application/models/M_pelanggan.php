@@ -18,6 +18,36 @@ class M_pelanggan extends CI_Model
 
     public function delete_pelanggan($id)
     {
-        $this->db->delete('hosting', array('id_hosting' => $id));
+        $this->db->delete('account', array('id_Account' => $id));
+    }
+
+    public function update_data($data)
+    {
+        $id_Account = $this->input->post('id_Account');
+        $Username = $this->input->post('Username');
+        $Email =  $this->input->post('Email$Email');
+        $role_id =  $this->input->post('role_id$role_id');
+        $date_created =  $this->input->post('date_created');
+
+        $data = array(
+            'id_Account'  => $id_Account,
+            'Username'       => $Username,
+            'Email$Email'   => $Email,
+            'role_id$role_id'   => $role_id,
+            'date_created'   => $date_created,
+        );
+
+        $where = array(
+            'id_Account' => $id_Account
+        );
+        $this->db->where($where);
+        $this->db->update('account', $data);
+    }
+
+    public function get_mahasiswa_spesifik($id)
+    {
+        $this->db->where('id_Account', $id);
+        $data = $this->db->get('account');
+        return $data->result();
     }
 }

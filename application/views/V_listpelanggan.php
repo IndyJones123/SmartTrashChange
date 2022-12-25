@@ -66,8 +66,8 @@
                                 <th scope="col">Username </th>
                                 <th scope="col">Email</th>
                                 <th scope="col">Role_ID </th>
-                                <th scope="col">Tanggal dibuat </th>
-                                <th scope="col"> Action </th>
+                                <th scope="col">Y-M-D</th>
+                                <th scope="col">Action</th>
                             </tr>
                         </thead>
 
@@ -76,10 +76,13 @@
                                 <td><?php echo $data->id_Account ?></td>
                                 <td><?php echo $data->Username ?></td>
                                 <td><?php echo $data->Email ?></td>
-                                <td><?php echo $data->role_id ?></td>
+                                <td><?php echo convertrole($data->role_id) ?></td>
                                 <td><?php echo $data->date_created ?></td>
+                                <td>
+                                    <a href=" <?php echo base_url('Pelanggan/update_data/' . $data->id_Account) ?>" class="btn btn-sm btn-success"><i class="fa fa-pencil small"></i>Update</a>
+                                </td>
                                 <td onclick="javascript: return confirm('Anda Yakin Hapus?')">
-                                    <form action="<?= base_url('Pelanggan/delete_pelanggan ' . $data->id_Account) ?>" method="post">
+                                    <form action="<?php echo base_url('Pelanggan/delete_data/' . $data->id_Account) ?>" method="post">
                                         <input type="hidden" name="id" value="<?= $data->id_Account ?>">
                                         <button class="btn btn-sm btn-danger"><i class="fa fa-trash small"></i>Delete</button>
                                     </form>

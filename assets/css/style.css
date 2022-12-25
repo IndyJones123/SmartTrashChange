@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+
 * {
 	padding: 0;
 	margin: 0;
@@ -6,12 +7,14 @@
 	font-family: "Poppins", sans-serif;
 	list-style: none;
 }
+
 :root {
 	--bg-color: #ffff;
 	--text-color: rgb(0, 0, 0);
 	--main-color: #11db11;
 	--secondary-color: #2f5150;
 }
+
 body {
 	height: 100%;
 	background: #eaeaea;
@@ -37,11 +40,13 @@ header {
 	width: 50%;
 	margin-top: 30px;
 }
+
 .navbar {
 	display: flex;
 	margin-top: 30px;
-	margin-right: 15%;
+	margin-right: 10%;
 }
+
 .navbar a {
 	color: var(--text-color);
 	font-size: 1.1rem;
@@ -51,12 +56,14 @@ header {
 	transition: all 0.5s ease;
 	text-decoration: none;
 }
+
 .navbar a:hover {
 	color: var(--bg-color);
 	background-color: var(--main-color);
 	padding: 6px;
 	border-radius: 13px;
 }
+
 .navbar a.active {
 	color: var(--bg-color);
 	background-color: var(--main-color);
@@ -69,6 +76,7 @@ header {
 	width: 15%;
 	top: -1%;
 }
+
 /* navbar */
 
 /* main home*/
@@ -82,7 +90,7 @@ main {
 	margin-top: 60px;
 }
 
-#carouselExampleCaptions .carousel-item img{
+#carouselExampleCaptions .carousel-item img {
 	object-fit: cover;
 	object-position: center;
 	overflow: hidden;
@@ -91,13 +99,11 @@ main {
 	border-radius: 15px;
 }
 
-#carouselExampleCaptions .carousel-item:before{
+#carouselExampleCaptions .carousel-item:before {
 	content: "";
-	background-image: 
-		linear-gradient(
-			to bottom,
-			transparent, rgba(0,0,0,0.5)
-		);
+	background-image:
+		linear-gradient(to bottom,
+			transparent, rgba(0, 0, 0, 0.5));
 	display: block;
 	position: absolute;
 	top: 0;
@@ -106,19 +112,19 @@ main {
 	border-radius: 15px;
 }
 
-#jenisSampahCard .card-img-top{
+#jenisSampahCard .card-img-top {
 	height: 220px;
 }
 
-#jenisSampahCard .card-title{
+#jenisSampahCard .card-title {
 	text-align: left;
 }
 
-#jenisSampahCard .card-text{
+#jenisSampahCard .card-text {
 	text-align: left;
 }
 
-#jenisSampahCard .card-text span{
+#jenisSampahCard .card-text span {
 	font-size: 11px;
 	color: #999999;
 }
@@ -131,6 +137,7 @@ main {
 	z-index: 10001;
 	display: none;
 }
+
 /* end */
 
 /* kategori */
@@ -138,7 +145,7 @@ main {
 	width: 50px;
 }
 
-.logo3 img{
+.logo3 img {
 	position: fixed;
 	width: 15%;
 	bottom: 0%;
@@ -167,6 +174,7 @@ main {
 	right: 90px;
 	bottom: -47rem;
 }
+
 /* end kategori*/
 /* end main */
 
@@ -217,10 +225,11 @@ main {
 	margin-top: 140px;
 	border-radius: 25px;
 }
+
 /* end */
 
 /* tcbox */
-.tukar-tcbox button{
+.tukar-tcbox button {
 	margin-left: 25%;
 }
 
@@ -245,6 +254,7 @@ main {
 	float: right;
 	padding-top: 5px;
 }
+
 .guidance-rule-box {
 	padding: 25px 45px;
 	font-size: 17px;
@@ -256,6 +266,7 @@ main {
 	color: var(--text-color);
 	margin: auto;
 }
+
 .bg-grey {
 	background-color: rgba(196, 196, 196, 0.123);
 }
@@ -293,6 +304,7 @@ main {
 	list-style-type: decimal;
 	list-style-position: outside;
 }
+
 /* end */
 
 /* panduan */
@@ -306,6 +318,7 @@ main {
 	background-color: #61cc6b !important;
 	border: none;
 }
+
 /* end */
 
 /* footer */
@@ -313,6 +326,7 @@ main {
 	position: relative;
 	min-height: 100%;
 }
+
 .logo-footer img {
 	position: absolute;
 	bottom: 260px;
@@ -328,18 +342,22 @@ footer {
 	background: var(--secondary-color);
 	color: var(--bg-color);
 }
+
 .main-content {
 	display: flex;
 }
+
 .main-content .box {
 	flex-basis: 50%;
 	padding: 10px 20px;
 }
+
 .box h2 {
 	font-size: 1.125rem;
 	font-weight: 600;
 	text-transform: uppercase;
 }
+
 .box .content {
 	margin: 20px 0 0 0;
 	position: relative;
@@ -354,15 +372,19 @@ footer {
 	top: -10px;
 	left: 0;
 }
+
 .left .content p {
 	text-align: justify;
 }
+
 .left .content .social {
 	margin: 20px 0 0 0;
 }
+
 .left .content .social a {
 	padding: 0 2px;
 }
+
 .left .content .social a span {
 	height: 40px;
 	width: 40px;
@@ -373,9 +395,11 @@ footer {
 	border-radius: 5px;
 	transition: 0.3s;
 }
+
 .left .content .social a span:hover {
 	background: var(--main-color);
 }
+
 .center .content .fas {
 	font-size: 1.4375rem;
 	background: #1a1a1a;
@@ -387,13 +411,16 @@ footer {
 	transition: 0.3s;
 	cursor: pointer;
 }
+
 .center .content .fas:hover {
 	background: var(--main-color);
 }
+
 .center .content .text {
 	font-size: 15px;
 	font-weight: 500;
 }
+
 .list-link * {
 	text-decoration: none;
 	font-size: 15px;
@@ -405,17 +432,21 @@ footer {
 .list-link * :hover {
 	color: var(--main-color);
 }
+
 .center .content .phone {
 	margin: 15px 0;
 }
+
 .right form .text {
 	font-size: 15px;
 	margin-bottom: 2px;
 	color: #999999;
 }
+
 .right form .msg {
 	margin-top: 10px;
 }
+
 .right form input {
 	width: 100%;
 	font-size: 15px;
@@ -423,12 +454,15 @@ footer {
 	padding-left: 10px;
 	border: 1px solid #222222;
 }
+
 .right form input:focus {
 	outline-color: var(--main-color);
 }
+
 .right form input {
 	height: 40px;
 }
+
 .right form .btn {
 	margin-top: 5px;
 	color: var(--main-color);
@@ -437,6 +471,7 @@ footer {
 	right: 50px;
 	margin-bottom: 10px;
 }
+
 .right form .btn button {
 	height: 40px;
 	width: 100%;
@@ -448,15 +483,18 @@ footer {
 	cursor: pointer;
 	transition: 0.3s;
 }
+
 .right form .btn button:hover {
 	background: var(--main-color);
 	color: var(--bg-color);
 }
+
 .bottom center {
 	padding: 10px;
 	font-size: 14px;
 	background: #151515;
 }
+
 .bottom center span {
 	color: #656565;
 }
@@ -469,29 +507,35 @@ footer {
 	font-weight: bold;
 	opacity: 100%;
 }
+
 .teks-datadiri1 {
 	text-decoration: none;
 	color: var(--text-color);
 	opacity: 0.5;
 }
+
 .teks-datadiri2 {
 	text-decoration: none;
 	color: var(--text-color);
 	padding-left: 20px;
 	opacity: 0.5;
 }
+
 .card-header a:hover {
 	color: var(--text-color);
 }
+
 .img-akun {
 	width: 20%;
 	float: left;
 	display: block;
 	margin: 5px;
 }
+
 .card-body1 {
 	color: var(--main-color);
 }
+
 .card-body p {
 	text-align: center;
 	right: 70px;
@@ -499,6 +543,7 @@ footer {
 	position: relative;
 	font-size: 20px;
 }
+
 .card-body h3 {
 	font-weight: bold;
 }
@@ -506,48 +551,60 @@ footer {
 .card-body2 {
 	margin-left: 70px;
 }
+
 .card-body2 p {
 	padding-top: 10px;
 	padding-left: 50px;
 	color: var(--text-color);
 }
+
 .card-body2 a {
 	text-decoration: none;
 }
+
 .card-body2 a :hover {
 	color: var(--main-color);
 }
+
 .card-body2 img {
 	float: left;
 	width: 6%;
 }
+
 .btn-kelamin button {
 	margin-left: 18px;
 	width: 45% !important;
 }
+
 .card-body3 {
 	margin-left: 50px;
 }
+
 .card-body3 p {
 	padding-top: 10px;
 	padding-left: 50px;
 	color: var(--text-color);
 	font-weight: bold;
 }
+
 .teks-body3 {
 	padding-top: 5px;
 	padding-left: 120px;
 }
+
 .teks-body3 p {
 	color: var(--text-color);
 }
+
 .teks-body3 a {
 	text-decoration: none;
 }
+
 .card-body3 img {
 	float: left;
 	width: 12%;
 }
+
 /* kelola akun end */
 
 /* konten panduan */
@@ -560,15 +617,18 @@ footer {
 	color: red;
 	font-size: 20px;
 }
+
 .text-exit a {
 	font-size: 20px;
 	text-decoration: none;
 	color: red;
 	align-items: center;
 }
+
 .text-exit a:hover {
 	color: red;
 }
+
 /* panduan end */
 
 /* pickup */
@@ -576,11 +636,13 @@ footer {
 	text-align: left !important;
 	padding: 15px 25px;
 }
+
 .teks-pickup2 {
 	font-weight: bold;
 	font-size: 25px;
 	padding-top: 10px;
 }
+
 .teks-pickup3 {
 	margin-top: -20px;
 }
@@ -589,6 +651,7 @@ footer {
 	color: var(--main-color);
 	text-decoration: none;
 }
+
 .teks-pickup a:hover {
 	color: var(--main-color);
 	font-weight: bold;
@@ -614,6 +677,7 @@ footer {
 	border-radius: 20px;
 	font-size: 14px;
 }
+
 .pickup-pesan i {
 	font-size: 25px !important;
 }
@@ -632,11 +696,13 @@ footer {
 	float: right;
 	text-decoration: none;
 }
+
 .pickup-kirim a:hover {
 	color: var(--bg-color);
 	background-color: var(--main-color);
 	transition-duration: 0.1s;
 }
+
 /* pickup end */
 
 /* drop off */
@@ -644,11 +710,13 @@ footer {
 	text-align: left !important;
 	padding: 15px 25px;
 }
+
 .teks-dropoff2 {
 	font-weight: bold;
 	font-size: 25px;
 	padding-top: 10px;
 }
+
 .teks-dropoff3 {
 	margin-top: -20px;
 }
@@ -657,6 +725,7 @@ footer {
 	color: var(--main-color);
 	text-decoration: none;
 }
+
 .teks-dropoff a:hover {
 	color: var(--main-color);
 	font-weight: bold;
@@ -682,6 +751,7 @@ footer {
 	border-radius: 20px;
 	font-size: 14px;
 }
+
 .dropoff-pesan i {
 	font-size: 25px !important;
 }
@@ -700,11 +770,13 @@ footer {
 	float: right;
 	text-decoration: none;
 }
+
 .dropoff-kirim a:hover {
 	color: var(--bg-color);
 	background-color: var(--main-color);
 	transition-duration: 0.1s;
 }
+
 /* drop off end */
 
 @media (max-width: 1280px) {
@@ -713,12 +785,15 @@ footer {
 		padding: 14px 2%;
 		transition: 0.2s;
 	}
+
 	.logo2 img {
 		display: block;
 	}
+
 	.logo3 img {
 		display: none;
 	}
+
 	.navbar a {
 		padding: 5px 0px;
 		margin: 0px 20px;
@@ -729,16 +804,20 @@ footer {
 	.logo img {
 		width: 50%;
 	}
+
 	#menu-icon {
 		display: block;
 		padding-top: 20px;
 	}
+
 	.logo2 img {
 		display: none;
 	}
+
 	.logo3 img {
 		display: none;
 	}
+
 	.navbar {
 		position: absolute;
 		top: 140px;
@@ -753,20 +832,24 @@ footer {
 		border-radius: 10px;
 		transition: all 0.5s ease;
 	}
+
 	.navbar a {
 		display: block;
 		margin: 10px 0px;
 		padding: 0px 25px;
 		transition: all 0.5s ease;
 	}
+
 	.navbar a:hover {
 		color: var(--bg-color);
 		transform: translateY(5px);
 	}
+
 	.navbar a.active {
 		color: var(--bg-color);
 		padding-left: 25px;
 	}
+
 	.navbar.open {
 		right: 2%;
 	}
@@ -777,14 +860,17 @@ footer {
 		position: relative;
 		bottom: 0px;
 	}
+
 	.logo-footer img {
 		position: relative;
 		top: 0px;
 	}
+
 	.main-content {
 		flex-wrap: wrap;
 		flex-direction: column;
 	}
+
 	.main-content .box {
 		margin: 5px 0;
 	}
