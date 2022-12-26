@@ -47,7 +47,7 @@
                 <i class="fas fa-chart-line px-2 ps-0"></i><a href="<?= site_url('updatesampah') ?>" class="nav-link">List Sampah</a>
             </li>
             <li>
-                <i class="fas fa-fw fa-sign-out-alt px-4 ps-0"></i><a href="<?= site_url('Welcome') ?>" class="nav-link">Logout</a>
+                <i class="fas fa-fw fa-sign-out-alt px-4 ps-0"></i><a href="<?= site_url('Registration/logout') ?>" class="nav-link">Logout</a>
             </li>
         </ul>
         <div id="topnavbar">

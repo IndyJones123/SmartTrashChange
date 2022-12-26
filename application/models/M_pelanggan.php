@@ -25,15 +25,15 @@ class M_pelanggan extends CI_Model
     {
         $id_Account = $this->input->post('id_Account');
         $Username = $this->input->post('Username');
-        $Email =  $this->input->post('Email$Email');
-        $role_id =  $this->input->post('role_id$role_id');
+        $Email =  $this->input->post('Email');
+        $role_id =  $this->input->post('role_id');
         $date_created =  $this->input->post('date_created');
 
         $data = array(
             'id_Account'  => $id_Account,
             'Username'       => $Username,
-            'Email$Email'   => $Email,
-            'role_id$role_id'   => $role_id,
+            'Email'   => $Email,
+            'role_id'   => $role_id,
             'date_created'   => $date_created,
         );
 

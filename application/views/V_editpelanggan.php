@@ -47,7 +47,7 @@
                 <i class="fas fa-chart-line px-2 ps-0"></i><a href="<?= site_url('updatesampah') ?>" class="nav-link">List Sampah</a>
             </li>
             <li>
-                <i class="fas fa-fw fa-sign-out-alt px-4 ps-0"></i><a href="<?= site_url('Welcome') ?>" class="nav-link">Logout</a>
+                <i class="fas fa-fw fa-sign-out-alt px-4 ps-0"></i><a href="<?= site_url('Registration/logout') ?>" class="nav-link">Logout</a>
             </li>
         </ul>
 
@@ -62,21 +62,21 @@
                 <div class="form-group row">
                     <label for="kategori" class="col-md-2 mt-3 col-form-label">ID Account</label>
                     <div class="col-sm-5">
-                        <input type="text" class="form-control" name="kategori" value="<?php echo $hosting[0]->id_Account ?> " readonly>
+                        <input type="text" class="form-control" name="id_Account" value="<?php echo $hosting[0]->id_Account ?> " readonly>
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label for="jenis" class="col-md-2 mt-3 col-form-label">Username</label>
                     <div class="col-sm-5">
-                        <input type="text" class="form-control" name="jenis" value="<?php echo $hosting[0]->Username ?>">
+                        <input type="text" class="form-control" name="Username" value="<?php echo $hosting[0]->Username ?>">
                     </div>
                 </div>
 
                 <div class="form-group row">
                     <label for="satuan" class="col-md-2 mt-3 col-form-label">Email</label>
                     <div class="col-sm-5">
-                        <input type="text" class="form-control" name="satuan" value="<?php echo $hosting[0]->Email ?>">
+                        <input type="text" class="form-control" name="Email" value="<?php echo $hosting[0]->Email ?>">
                     </div>
                 </div>
 
@@ -84,7 +84,7 @@
                     <label for="satuankilo" class="col-md-2 mt-3 col-form-label">Role</label>
                     <div class="col-sm-5">
                         <p>Role List : (0 = User, 1 = Admin, 2 = Driver)</p>
-                        <input type="text" class="form-control" name="satuankilo" value="<?php echo $hosting[0]->role_id ?>">
+                        <input type="text" class="form-control" name="role_id" value="<?php echo $hosting[0]->role_id ?>">
                     </div>
                 </div>
 
@@ -92,7 +92,7 @@
                     <label for="hargamin" class="col-md-2 mt-3 col-form-label">Tanggal Akun Dibuat
                     </label>
                     <div class="col-sm-5">
-                        <input type="text" class="form-control" name="hargamin" value="<?php echo $hosting[0]->date_created ?> " readonly>
+                        <input type="text" class="form-control" name="date_crated" value="<?php echo $hosting[0]->date_created ?> " readonly>
                     </div>
                 </div>
 

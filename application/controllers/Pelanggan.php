@@ -25,7 +25,7 @@ class Pelanggan extends CI_Controller
     {
         if ($this->input->post()) {
             $data_pelanggan = $this->input->post();
-            $this->m_pelanggan->update_data($data_pelanggan);
+            $this->M_pelanggan->update_data($data_pelanggan);
             redirect('Pelanggan');
         } else {
             $data_update['hosting'] = $this->M_pelanggan->get_mahasiswa_spesifik($id_pelanggan);
