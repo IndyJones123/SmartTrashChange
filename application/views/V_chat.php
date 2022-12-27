@@ -58,12 +58,12 @@
     </script>
 
     <div class="konten-chat text-center">
-        <img src="View HTML/assets/image_chat_available.png" alt="">
+        <img src="<?php echo base_url(); ?>View HTML/assets/image_chat_available.png">
         <p class="p1 mt-3">Chat Berada di Pojok Kanan Bawah</p>
         <p>Ayo Mulai Mengirim Pesan !</p>
     </div>
-
     <!-- end -->
+    
     <!-- footer -->
     <footer>
 
