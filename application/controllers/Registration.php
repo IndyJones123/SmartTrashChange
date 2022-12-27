@@ -45,6 +45,7 @@ class Registration extends CI_Controller
 			if ($ceklogin) {
 				foreach ($ceklogin as $row)
 					if ($row->is_active == "1") {
+						$this->session->set_userdata('id_Account', $row->id_Account);
 						$this->session->set_userdata('Username', $row->Username);
 						$this->session->set_userdata('Sandi', $row->Sandi);
 						$this->session->set_userdata('Email', $row->Email);

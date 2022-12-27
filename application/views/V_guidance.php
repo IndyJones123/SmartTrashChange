@@ -83,10 +83,10 @@
                     <h2>Link Terkait</h2>
                     <div class="content">
                         <ul class="list-link">
-                            <li><a href="home.html">Beranda</a></li>
-                            <li><a href="pesanan.html">Transaksi</a></li>
-                            <li><a href="chat.html">chat</a></li>
-                            <li><a href="kelola_akun.html">kelola Akun</a></li>
+                            <li><a href="<?php echo base_url(); ?>home" class="active"> Beranda</a></li>
+                            <li><a href="<?php echo base_url(); ?>Pemesanan/index">Transaksi</a></li>
+                            <li><a href="<?php echo base_url(); ?>Chat/index">Chat</a></li>
+                            <li><a href="<?php echo base_url(); ?>Kelolaakun/index">Kelola Akun</a></li>
                         </ul>
                     </div>
                 </div>

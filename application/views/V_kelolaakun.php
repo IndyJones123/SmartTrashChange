@@ -18,7 +18,7 @@
 
     <!-- navbar -->
     <header>
-        <a href="home.html" class="logo">
+        <a href="<?php echo base_url(); ?>Home" class="logo">
             <img src="<?php echo base_url(); ?>assets/assets/logo-brand.png" alt="">
         </a>
 
@@ -84,36 +84,40 @@
                         </div>
                         <div class="container">
                             <div class="card-body1">
-                                <form class="row g-3">
+                                <form class="row g-3" method="POST" action="<?php echo base_url(); ?>Pelanggan/update_pelanggan">
+                                    <div class="col-md-6 mt-5">
+                                        <label for="nama_depan" class="form-label">ID ACCOUNT</label>
+                                        <input type="nama_depan" class="form-control" name="id_Account" id="inputnama_depan" value="<?php echo $this->session->userdata('id_Account'); ?>" readonly>
+                                    </div>
                                     <div class="col-md-6 mt-5">
                                         <label for="nama_depan" class="form-label">Nama Depan</label>
-                                        <input type="nama_depan" class="form-control" id="inputnama_depan" value="<?php echo $this->session->userdata('namadepan'); ?>">
+                                        <input type="nama_depan" class="form-control" name="namadepan" id="inputnama_depan" value="<?php echo $this->session->userdata('namadepan'); ?>">
                                     </div>
                                     <div class="col-md-6 mt-5">
                                         <label for="nama_belakang" class="form-label">Nama Belakang</label>
-                                        <input type="nama_belakang" class="form-control" id="inputnama_belakang" value="<?php echo $this->session->userdata('namabelakang'); ?>">
+                                        <input type="nama_belakang" class="form-control" name="namabelakang" id="inputnama_belakang" value="<?php echo $this->session->userdata('namabelakang'); ?>">
                                     </div>
 
                                     <div class="col-md-6 mt-5">
                                         <label for="nama_belakang" class="form-label">Jenis Kelamin (L/P)</label>
-                                        <input type="nama_belakang" class="form-control" id="inputnama_belakang" value="<?php echo $this->session->userdata('jeniskelamin'); ?>">
+                                        <input type="nama_belakang" class="form-control" name="jeniskelamin" id="inputnama_belakang" value="<?php echo $this->session->userdata('jeniskelamin'); ?>">
                                     </div>
                                     <div>
                                         <label for="exampleInputEmail1" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com" value="<?php echo $this->session->userdata('Email'); ?>">
+                                        <input type="email" class="form-control" name="Email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com" value="<?php echo $this->session->userdata('Email'); ?>">
                                     </div>
                                     <div>
                                         <label for="exampleInputPassword1" class="form-label">Password</label>
-                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="***********" value="<?php echo $this->session->userdata('Sandi'); ?>">
+                                        <input type="password" class="form-control" name="Sandi" id="exampleInputPassword1" placeholder="***********" value="<?php echo $this->session->userdata('Sandi'); ?>">
                                     </div>
                                     <div>
                                         <label for="exampleInputnumber" class="form-label">No Telepon</label>
-                                        <input type="text" class="form-control" id="exampleInputnumber" placeholder="08xxxxxxxx" value="<?php echo $this->session->userdata('notelepon'); ?>">
+                                        <input type="text" class="form-control" name="notelepon" id="exampleInputnumber" placeholder="08xxxxxxxx" value="<?php echo $this->session->userdata('notelepon'); ?>">
                                     </div>
 
                                     <div>
                                         <label for="exampleFormControlTextarea1" class="form-label">Alamat</label>
-                                        <input class="form-control" id="exampleFormControlTextarea1" rows="4" placeholder="Masukkan Alamat" value="<?php echo $this->session->userdata('alamat'); ?>"></input>
+                                        <input class="form-control" name="alamat" id="exampleFormControlTextarea1" rows="4" placeholder="Masukkan Alamat" value="<?php echo $this->session->userdata('alamat'); ?>"></input>
                                     </div>
 
                                     <div class="mb-3">
@@ -134,7 +138,7 @@
 
                 <div class="text-exit">
                     <i class='bx bx-exit'>
-                        <a href="#">Keluar</a>
+                        <a href="<?php echo base_url() ?>Registration/logout">Keluar</a>
                     </i>
                 </div>
             </div>
@@ -167,10 +171,10 @@
                     <h2>Anggota Kelompok</h2>
                     <div class="content">
                         <ul class="list-link">
-                            <li><a href="#">Alfian Dorif Murtadlo 20081010251</a></li>
-                            <li><a href="#">Transaksi</a></li>
-                            <li><a href="#">chat</a></li>
-                            <li><a href="#">kelola Akun</a></li>
+                            <li><a href="<?php echo base_url(); ?>home" class="active"> Beranda</a></li>
+                            <li><a href="<?php echo base_url(); ?>Pemesanan/index">Transaksi</a></li>
+                            <li><a href="<?php echo base_url(); ?>Chat/index">Chat</a></li>
+                            <li><a href="<?php echo base_url(); ?>Kelolaakun/index">Kelola Akun</a></li>
                         </ul>
                     </div>
                 </div>

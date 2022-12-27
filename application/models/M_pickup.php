@@ -1,6 +1,6 @@
 <?php
 
-class M_pelanggan extends CI_Model
+class M_pickup extends CI_Model
 {
     public function __construct()
     {

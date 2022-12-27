@@ -103,15 +103,13 @@
 
 
                 <div class="center box">
-                    <h2>Kelompok 10</h2>
+                    <h2>LINK TERKAIT</h2>
                     <div class="content">
                         <div class="list-link">
-                            <a href="#">Pandu Ali W (20081010230)</a><br>
-                            <a href="#">Hanif Nur F (20081010231)</a><br>
-                            <a href="#">Ikhasanul A (20081010238)</a><br>
-                            <a href="#">Rifqi Alvian A (20081010239)</a><br>
-                            <a href="#">Desya Ristya P (20081010240)</a><br>
-                            <a href="#">Alfian Dorif M (20081010251)</a><br>
+                            <li><a href="<?php echo base_url(); ?>home" class="active"> Beranda</a></li>
+                            <li><a href="<?php echo base_url(); ?>Pemesanan/index">Transaksi</a></li>
+                            <li><a href="<?php echo base_url(); ?>Chat/index">Chat</a></li>
+                            <li><a href="<?php echo base_url(); ?>Kelolaakun/index">Kelola Akun</a></li>
                         </div>
                     </div>
                 </div>

@@ -27,9 +27,8 @@
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav text-right text-white ml-auto">
                         <li class="nav-item" role="presentation"><a class="nav-link active" href="order_driver.html"> My Order</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="chat_driver.html">My Chat</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="history_driver.html">My History</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="profil_driver.html">My Profile</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?php echo base_url(); ?>Profiledriver">My Profile</a></li>
                     </ul>
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item"></li>

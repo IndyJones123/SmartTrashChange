@@ -70,7 +70,7 @@
             <div class="row justify-content-around g-0 text-center">
                 <div class="col-md-3">
                     <div class="menu-kategori">
-                        <a href="pickup.html"><img src="<?php echo base_url(); ?>assets/assets/icon_pickup.png" class="img-kategori" /></a>
+                        <a href="<?php echo base_url() ?>Pickup"><img src="<?php echo base_url(); ?>assets/assets/icon_pickup.png" class="img-kategori" /></a>
                         <p class="mt-2">Pick Up</p>
                     </div>
                 </div>
