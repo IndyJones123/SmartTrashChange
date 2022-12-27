@@ -22,6 +22,13 @@ class M_pesanan extends CI_Model
         return $data->result();
     }
 
+    public function get_pesanan_driver($NamaDriver)
+    {
+        $sql = "SELECT * FROM pesanan WHERE Situation = 1 AND NamaDriver = '$NamaDriver' ";
+        $data = $this->db->query($sql);
+        return $data->result();
+    }
+
     public function insert_pesanan()
     {
         $Username = $this->input->post('Username');

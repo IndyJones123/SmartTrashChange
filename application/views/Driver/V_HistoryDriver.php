@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DRIVER || HISTORY</title>
+    <title>DRIVER || ORDER</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>Assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>Assets/css/styleDriver.css">
 </head>
 
 <body>
@@ -26,26 +26,15 @@
 
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav text-right text-white ml-auto">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" href="<?php echo base_url() ?>Pesanan/read_pesanan"> My Order</a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link" href="<?php echo base_url() ?>HistoryDriver">My History</a>
-                        </li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?php echo base_url() ?>ProfileDriver">My Profile</a>
-                        </li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?php echo base_url() ?>Pesanan/read_pesanan"> My Order</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="<?php echo base_url('HistoryDriver/read/' . $this->session->userdata('Username')) ?>">My History</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link " href="<?php echo base_url() ?>ProfileDriver">My Profile</a></li>
                     </ul>
-
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item"></li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">
-                                <i class="fa fa-search"></i>
-                            </a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>Registration/logout"><i>Logout</i></a></li>
                         <li class="nav-item"></li>
                     </ul>
-
                 </div>
             </div>
         </nav>
@@ -54,218 +43,75 @@
 
     <main>
 
-        <div class="container">
+        <div class="container text-nav text-white">
+            <h5>Pesanan Selesai</h5>
         </div>
 
         <div class="container d-flex justify-content-center mt-5">
-            <div class="main">
-                <div class="row">
-                    <div class="col-md-3">
+            <div class="row mr-5 ml-2">
 
-                        <div>
-                            <div class="one">
-                                <div class="text-right pr-2 pt-1">
-                                    <i class="dotdot fa-solid fa-ellipsis-vertical"></i>
+                <div>
+                    <?php foreach ($pesanan as $data) : ?>
+                        <div class="card-order p-4">
+
+                            <div class="top-container d-flex justify-content-start align-items-center">
+                                <div class="text-cus1">
+                                    <i class="text-white fas fa-face-grin-stars"></i>
                                 </div>
-                                <div class="d-flex justify-content-center">
-                                    <img src="account-6491185_960_720.webp" width="40" class="rounded-circle">
+                                <span class="shipped pl-2"><?php echo $data->NamaPelanggan ?></span>
+                            </div>
+
+                            <div class="middle-container pt-4 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <img src="<?php echo base_url(); ?>Assets/css/account-6491185_960_720.webp" class="img-fluid " width="90">
                                 </div>
-                                <div class="text-center">
-                                    <span class="name">Customer 1</span>
-                                    <p class="mail">cus1@gmail.com</p>
-                                </div>
-                                <div class="text-center">
-                                    <span class="total d-block pt-2">Total Pembayaran</span>
-                                    <span class="money">Rp. 15.000</span>
-                                </div>
-                                <div class="text-center align-items-center d-flex justify-content-center pt-2 pb-2">
-                                    <a href="#" class="details">View Details
-                                        <i class="fa fa-arrow-right right pl-1"></i>
-                                    </a>
+
+                                <div class="d-flex flex-column text-right">
+                                    <span class="item-name"><?php echo $data->Sampah ?></span>
+                                    <span class="item-quantity"><?php echo $data->BeratSampah ?> Kg</span>
+                                    <div class="item-price-container mt-3">
+                                        <span class="item-price">
+                                            <span class="dollar">Rp </span><?php echo convertupah($data->BeratSampah); ?></span>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="pt-2">
-                            <div class="one mt-5">
-                                <div class="text-right pr-2 pt-1">
-                                    <i class="dotdot fa-solid fa-ellipsis-vertical"></i>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <img src="account-6491185_960_720.webp" width="40" class="rounded-circle">
-                                </div>
-                                <div class="text-center">
-                                    <span class="name">Customer 2</span>
-                                    <p class="mail">cus2@gmail.com</p>
-                                </div>
-                                <div class="text-center">
-                                    <span class="total d-block pt-2">Total Pembayaran</span>
-                                    <span class="money">Rp. 20.000</span>
-                                </div>
-                                <div class="text-center align-items-center d-flex justify-content-center pt-2 pb-2">
-                                    <a href="#" class="details">View Details
-                                        <i class="fa fa-arrow-right right pl-1"></i>
-                                    </a>
-                                </div>
+                            <div class="d-flex align-items-center mt-2">
+                                <i class="fas fa-trophy"></i>
+                                <span class="reward-points pl-2"><?php echo convertrewards($data->BeratSampah); ?></span>
+                                <span class="reward-points-text">Rewards Points</span>
+                            </div>
+
+                            <div class="d-flex align-items-center mt-2">
+                                <i class="fas fa-trophy"></i>
+                                <span class="reward-points pl-2"><?php echo $data->AlamatPelanggan; ?></span>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mt-5 pb-3">
+                                <td onclick="javascript: return confirm('Anda Yakin Hapus?')">
+                                    <form action="<?php echo base_url('Pesanan/delete_pesanan/' . $data->id_pesanan) ?>" method="post">
+                                        <input type="hidden" name="id_pesanan" value="<?= $data->id_pesanan ?>">
+                                        <button type="submit" class="btn btn-sm btn-danger"><i class="fa fa-trash small"></i>Delete</button>
+                                    </form>
+                                </td>
+                                <td onclick="javascript: return confirm('Anda Yakin Menerima Pesanan?')">
+                                    <form action="<?php echo base_url('Pesanan/update_pesanan/' . $data->id_pesanan) ?>" method="post">
+                                        <input type="hidden" name="id_pesanan" value="<?= $data->id_pesanan ?>">
+                                        <input type="hidden" name="NamaDriver" value="<?php echo $this->session->userdata('Username'); ?>">
+                                        <input type="hidden" name="UpahDriver" value="<?php echo convertupah($data->BeratSampah); ?>">
+                                        <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-trash small"></i>Done</button>
+                                    </form>
+                                </td>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div>
-                            <div class="one">
-                                <div class="text-right pr-2 pt-1">
-                                    <i class="dotdot fa-solid fa-ellipsis-vertical"></i>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <img src="account-6491185_960_720.webp" width="40" class="rounded-circle">
-                                </div>
-                                <div class="text-center">
-                                    <span class="name">Customer 3</span>
-                                    <p class="mail">cus3@gmail.com</p>
-                                </div>
-                                <div class="text-center">
-                                    <span class="total d-block pt-2">Total Pembayaran</span>
-                                    <span class="money">Rp. 10.000</span>
-                                </div>
-                                <div class="text-center align-items-center d-flex justify-content-center pt-2 pb-2">
-                                    <a href="#" class="details">View Details
-                                        <i class="fa fa-arrow-right right pl-1"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="pt-2">
-                            <div class="one mt-5">
-                                <div class="text-right pr-2 pt-1">
-                                    <i class="dotdot fa-solid fa-ellipsis-vertical"></i>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <img src="account-6491185_960_720.webp" width="40" class="rounded-circle">
-                                </div>
-                                <div class="text-center">
-                                    <span class="name">Customer 4</span>
-                                    <p class="mail">cus4@gmail.com</p>
-                                </div>
-                                <div class="text-center">
-                                    <span class="total d-block pt-2">Total Pembayaran</span>
-                                    <span class="money">Rp. 8.000</span>
-                                </div>
-                                <div class="text-center align-items-center d-flex justify-content-center pt-2 pb-2">
-                                    <a href="#" class="details">View Details
-                                        <i class="fa fa-arrow-right right pl-1"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div>
-                            <div class="one">
-                                <div class="text-right pr-2 pt-1">
-                                    <i class="dotdot fa-solid fa-ellipsis-vertical"></i>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <img src="account-6491185_960_720.webp" width="40" class="rounded-circle">
-                                </div>
-                                <div class="text-center">
-                                    <span class="name">Customer 5</span>
-                                    <p class="mail">cus5@gmail.com</p>
-                                </div>
-                                <div class="text-center">
-                                    <span class="total d-block pt-2">Total Pembayaran</span>
-                                    <span class="money">Rp. 5.000</span>
-                                </div>
-                                <div class="text-center align-items-center d-flex justify-content-center pt-2 pb-2">
-                                    <a href="#" class="details">View Details
-                                        <i class="fa fa-arrow-right right pl-1"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="pt-2">
-                            <div class="one mt-5">
-                                <div class="text-right pr-2 pt-1">
-                                    <i class="dotdot fa-solid fa-ellipsis-vertical"></i>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <img src="account-6491185_960_720.webp" width="40" class="rounded-circle">
-                                </div>
-                                <div class="text-center">
-                                    <span class="name">Customer 6</span>
-                                    <p class="mail">cus6@gmail.com</p>
-                                </div>
-                                <div class="text-center">
-                                    <span class="total d-block pt-2">Total Pembayaran</span>
-                                    <span class="money">Rp. 5.000</span>
-                                </div>
-                                <div class="text-center align-items-center d-flex justify-content-center pt-2 pb-2">
-                                    <a href="#" class="details">View Details
-                                        <i class="fa fa-arrow-right right pl-1"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-3">
-                        <div>
-                            <div class="one">
-                                <div class="text-right pr-2 pt-1">
-                                    <i class="dotdot fa-solid fa-ellipsis-vertical"></i>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <img src="account-6491185_960_720.webp" width="40" class="rounded-circle">
-                                </div>
-                                <div class="text-center">
-                                    <span class="name">Customer 7</span>
-                                    <p class="mail">cus7@gmail.com</p>
-                                </div>
-                                <div class="text-center">
-                                    <span class="total d-block pt-2">Total Pembayaran</span>
-                                    <span class="money">Rp. 12.000</span>
-                                </div>
-                                <div class="text-center align-items-center d-flex justify-content-center pt-2 pb-2">
-                                    <a href="#" class="details">View Details
-                                        <i class="fa fa-arrow-right right pl-1"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="pt-2">
-                            <div class="one mt-5">
-                                <div class="text-right pr-2 pt-1">
-                                    <i class="dotdot fa-solid fa-ellipsis-vertical"></i>
-                                </div>
-                                <div class="d-flex justify-content-center">
-                                    <img src="account-6491185_960_720.webp" width="40" class="rounded-circle">
-                                </div>
-                                <div class="text-center">
-                                    <span class="name">Customer 8</span>
-                                    <p class="mail">cus8@gmail.com</p>
-                                </div>
-                                <div class="text-center">
-                                    <span class="total d-block pt-2">Total Pembayaran</span>
-                                    <span class="money">Rp.0</span>
-                                </div>
-                                <div class="text-center align-items-center d-flex justify-content-center pt-2 pb-2">
-                                    <a href="#" class="details">View Details
-                                        <i class="fa fa-arrow-right right pl-1"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    <?php endforeach; ?>
                 </div>
             </div>
+
         </div>
+
     </main>
+
 
     <footer>
         <div id="footer py-4">
