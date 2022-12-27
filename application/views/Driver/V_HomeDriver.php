@@ -26,9 +26,9 @@
 
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav text-right text-white ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link active" href="order_driver.html"> My Order</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="history_driver.html">My History</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?php echo base_url(); ?>Profiledriver">My Profile</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="<?php echo base_url() ?>Pesanan/read_pesanan"> My Order</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?php echo base_url() ?>HistoryDriver">My History</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link " href="<?php echo base_url() ?>ProfileDriver">My Profile</a></li>
                     </ul>
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item"></li>
@@ -51,151 +51,53 @@
             <div class="row mr-5 ml-2">
 
                 <div>
-                    <div class="card-order p-4">
+                    <?php foreach ($pesanan as $data) : ?>
+                        <form action="" method="POST">
+                            <div class="card-order p-4">
 
-                        <div class="top-container d-flex justify-content-start align-items-center">
-                            <div class="text-cus1">
-                                <i class="text-white fas fa-face-grin-stars"></i>
-                            </div>
-                            <span class="shipped pl-2">Customer 1</span>
-                        </div>
+                                <div class="top-container d-flex justify-content-start align-items-center">
+                                    <div class="text-cus1">
+                                        <i class="text-white fas fa-face-grin-stars"></i>
+                                    </div>
+                                    <span class="shipped pl-2"><?php echo $data->NamaPelanggan ?></span>
+                                </div>
 
-                        <div class="middle-container pt-4 d-flex align-items-center justify-content-between">
-                            <div>
-                                <img src="account-6491185_960_720.webp" class="img-fluid " width="90">
-                            </div>
+                                <div class="middle-container pt-4 d-flex align-items-center justify-content-between">
+                                    <div>
+                                        <img src="<?php echo base_url(); ?>Assets/css/account-6491185_960_720.webp" class="img-fluid " width="90">
+                                    </div>
 
-                            <div class="d-flex flex-column text-right">
-                                <span class="item-name">Sampah Plastik</span>
-                                <span class="item-quantity">+-3Kg</span>
-                                <div class="item-price-container mt-3">
-                                    <span class="item-price">
-                                        <span class="dollar">Rp </span>5.500</span>
+                                    <div class="d-flex flex-column text-right">
+                                        <span class="item-name"><?php echo $data->Sampah ?></span>
+                                        <span class="item-quantity"><?php echo $data->BeratSampah ?> Kg</span>
+                                        <div class="item-price-container mt-3">
+                                            <span class="item-price">
+                                                <span class="dollar">Rp </span><?php echo convertupah($data->BeratSampah); ?></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center mt-2">
+                                    <i class="fas fa-trophy"></i>
+                                    <span class="reward-points pl-2"><?php echo convertrewards($data->BeratSampah); ?></span>
+                                    <span class="reward-points-text">Rewards Points</span>
+                                </div>
+
+                                <div class="d-flex align-items-center mt-2">
+                                    <i class="fas fa-trophy"></i>
+                                    <span class="reward-points pl-2"><?php echo $data->AlamatPelanggan; ?></span>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center mt-5 pb-3">
+                                    <button class="btn btn-outline-warning">Tolak</button>
+                                    <button class="btn btn-success" type="button">Done</button>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="d-flex align-items-center mt-2">
-                            <i class="fas fa-trophy"></i>
-                            <span class="reward-points pl-2">5</span>
-                            <span class="reward-points-text">Rewards Points</span>
-                        </div>
-
-                        <div class="d-flex justify-content-between align-items-center mt-5 pb-3">
-                            <button class="btn btn-outline-warning" type="button">Tolak</button>
-                            <button class="btn btn-success" type="button">Terima</button>
-                        </div>
-                    </div>
+                        </form>
+                    <?php endforeach; ?>
                 </div>
             </div>
 
-            <div class="row mr-5">
-                <div class="card-order p-4">
-                    <div class="top-container d-flex justify-content-start align-items-center">
-                        <div class="text-cus1">
-                            <i class="text-white fas fa-face-grin-stars"></i>
-                        </div>
-                        <span class="shipped pl-2">Customer 2</span>
-                    </div>
-
-                    <div class="middle-container pt-4 d-flex align-items-center justify-content-between">
-                        <div>
-                            <img src="account-6491185_960_720.webp" class="img-fluid " width="90">
-                        </div>
-                        <div class="d-flex flex-column text-right">
-                            <span class="item-name">Sampah Kertas</span>
-                            <span class="item-quantity">+-3Kg</span>
-                            <div class="item-price-container mt-3">
-                                <span class="item-price">
-                                    <span class="dollar">Rp </span>5.000</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-center mt-2">
-                        <i class="fas fa-trophy"></i>
-                        <span class="reward-points pl-2">10</span>
-                        <span class="reward-points-text">Rewards Points</span>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center mt-5 pb-3">
-                        <button class="btn btn-outline-warning" type="button">Tolak</button>
-                        <button class="btn btn-success" type="button">Terima</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row mr-4">
-                <div class="card-order p-4">
-                    <div class="top-container d-flex justify-content-start align-items-center">
-                        <div class="text-cus1">
-                            <i class="text-white fas fa-face-grin-stars"></i>
-                        </div>
-                        <span class="shipped pl-2">Customer 3</span>
-                    </div>
-
-                    <div class="middle-container pt-4 d-flex align-items-center justify-content-between">
-                        <div>
-                            <img src="account-6491185_960_720.webp" class="img-fluid " width="90">
-                        </div>
-                        <div class="d-flex flex-column text-right">
-                            <span class="item-name">Sampah Botol</span>
-                            <span class="item-quantity">+-5Kg</span>
-                            <div class="item-price-container mt-3">
-                                <span class="item-price">
-                                    <span class="dollar">Rp </span>10.000</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-center mt-2">
-                        <i class="fas fa-trophy"></i>
-                        <span class="reward-points pl-2">50</span>
-                        <span class="reward-points-text">Rewards Points</span>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center mt-5 pb-3">
-                        <button class="btn btn-outline-warning" type="button">Tolak</button>
-                        <button class="btn btn-success" type="button">Terima</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="ml-2">
-                <div class="card-order p-4">
-                    <div class="top-container d-flex justify-content-start align-items-center">
-                        <div class="text-cus1">
-                            <i class="text-white fas fa-face-grin-stars"></i>
-                        </div>
-                        <span class="shipped pl-2">Customer 4</span>
-                    </div>
-
-                    <div class="middle-container pt-4 d-flex align-items-center justify-content-between">
-                        <div>
-                            <img src="account-6491185_960_720.webp" class="img-fluid " width="90">
-                        </div>
-                        <div class="d-flex flex-column text-right">
-                            <span class="item-name">Sampah Kertas</span>
-                            <span class="item-quantity">+-5Kg</span>
-                            <div class="item-price-container mt-3">
-                                <span class="item-price">
-                                    <span class="dollar">Rp </span>7.000</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="d-flex align-items-center mt-2">
-                        <i class="fas fa-trophy"></i>
-                        <span class="reward-points pl-2">20</span>
-                        <span class="reward-points-text">rewards points</span>
-                    </div>
-
-                    <div class="d-flex justify-content-between align-items-center mt-5 pb-3">
-                        <button class="btn btn-outline-warning" type="button">Tolak</button>
-                        <button class="btn btn-success" type="button">Terima</button>
-                    </div>
-                </div>
-            </div>
         </div>
 
     </main>

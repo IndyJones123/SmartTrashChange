@@ -12,3 +12,13 @@ function convertrole($id)
     }
     return $id;
 }
+
+function convertrewards($id)
+{
+    return $id * 5;
+}
+
+function convertupah($id)
+{
+    return $id * 5000;
+}

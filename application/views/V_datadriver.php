@@ -54,7 +54,10 @@
                     <i class="fas fa-chart-line px-2 ps-0"></i><a href="<?= site_url('updatesampah') ?>" class="nav-link">List Sampah</a>
                 </li>
                 <li>
-                    <i class="fas fa-fw fa-sign-out-alt px-4 ps-0"></i><a href="<?= site_url('Welcome') ?>" class="nav-link">Logout</a>
+                    <i class="fas fa-chart-line px-2 ps-0"></i><a href="<?= site_url('Donasi/read_donasi') ?>" class="nav-link">List Donasi</a>
+                </li>
+                <li>
+                    <i class="fas fa-fw fa-sign-out-alt px-4 ps-0"></i><a href="<?= site_url('Registration/logout') ?>" class="nav-link">Logout</a>
                 </li>
             </ul>
 
@@ -67,73 +70,73 @@
                 <div class="container text-center">
                     <p class="teks-pesanan"> Data Driver </p>
                     <div class="container text-center">
-                    <table class="table table-bordered">
-                        <thead>
-                          <tr>
-                            <th scope="col"> No </th>
-                            <th scope="col"> Nama </th>
-                            <th scope="col"> Gender </th>
-                            <th scope="col"> No. telp </th>
-                            <th scope="col"> Alamat </th>
-                            <th scope="col"> Rating </th>
-                            <th scope="col"> Member </th>
-                            <th scope="col"> Total perjalanan </th>
-                        </tr>
-                    </thead>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th scope="col"> No </th>
+                                    <th scope="col"> Nama </th>
+                                    <th scope="col"> Gender </th>
+                                    <th scope="col"> No. telp </th>
+                                    <th scope="col"> Alamat </th>
+                                    <th scope="col"> Rating </th>
+                                    <th scope="col"> Member </th>
+                                    <th scope="col"> Total perjalanan </th>
+                                </tr>
+                            </thead>
 
-                    <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td>Bambang</td>                                
-                            <td>Laki-Laki</td>
-                            <td>0812345678</td>
-                            <td>Jl. ni aja No.20</td>
-                            <td>4</td>
-                            <td>Pro </td>
-                            <td>154 Jam</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">2</th>
-                            <td>Hendra</td>
-                            <td>Laki-Laki</td>
-                            <td>0812345678</td>
-                            <td>Jl. gusdur nomer 35</td>
-                            <td>4.2</td>
-                            <td>Pro </td>
-                            <td>188 Jam</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">5</th>
-                          <td>Yunita</td>
-                          <td>Perempuan</td>
-                          <td>08255443556</td>
-                          <td>Jl. Gunung Anyar nomer 13</td>
-                          <td>3.7</td>
-                          <td>Pro</td>
-                          <td>180 Jam</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>Yudi</td>
-                          <td>Laki-Laki</td>
-                          <td>0812345678</td>
-                          <td>Jl. kalibanteng nomer 27</td>
-                          <td>3.8</td>
-                          <td>Super</td>
-                          <td>101 Jam</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">4</th>
-                          <td>Anita</td>
-                          <td>Perempuan</td>
-                          <td>0852356645</td>
-                          <td>Jl. Banyiwangi nomer 30</td>
-                          <td>3.6</td>
-                          <td>Pemula</td>
-                          <td>40 Jam</td>
-                        </tr>
-                    </tbody>
-                </table>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Bambang</td>
+                                    <td>Laki-Laki</td>
+                                    <td>0812345678</td>
+                                    <td>Jl. ni aja No.20</td>
+                                    <td>4</td>
+                                    <td>Pro </td>
+                                    <td>154 Jam</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Hendra</td>
+                                    <td>Laki-Laki</td>
+                                    <td>0812345678</td>
+                                    <td>Jl. gusdur nomer 35</td>
+                                    <td>4.2</td>
+                                    <td>Pro </td>
+                                    <td>188 Jam</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Yunita</td>
+                                    <td>Perempuan</td>
+                                    <td>08255443556</td>
+                                    <td>Jl. Gunung Anyar nomer 13</td>
+                                    <td>3.7</td>
+                                    <td>Pro</td>
+                                    <td>180 Jam</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Yudi</td>
+                                    <td>Laki-Laki</td>
+                                    <td>0812345678</td>
+                                    <td>Jl. kalibanteng nomer 27</td>
+                                    <td>3.8</td>
+                                    <td>Super</td>
+                                    <td>101 Jam</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Anita</td>
+                                    <td>Perempuan</td>
+                                    <td>0852356645</td>
+                                    <td>Jl. Banyiwangi nomer 30</td>
+                                    <td>3.6</td>
+                                    <td>Pemula</td>
+                                    <td>40 Jam</td>
+                                </tr>
+                            </tbody>
+                        </table>
                         </ol>
 
                     </div>

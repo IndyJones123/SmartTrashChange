@@ -57,7 +57,7 @@
         </div>
 
         <div class="container mt-5">
-            <form class="pickup">
+            <form class="pickup" method="post" action="Pesanan/pesanan">
                 <div class="form-check form-check-reverse">
                     <input type="text" name="Username" value="<?php echo $this->session->userdata('Username'); ?>" id="reverseCheck1">
                     <label class="form-check-label" for="reverseCheck1">
@@ -75,9 +75,17 @@
                 <hr />
 
                 <div class="form-check form-check-reverse mt-4">
-                    <input type="text" name="Jenis Sampah" value="" id="reverseCheck1">
+                    <input type="text" name="Sampah" value="" id="reverseCheck1">
                     <label class="form-check-label" for="reverseCheck1">
                         <i class="fa fa-tv"></i> Jenis Sampah
+                    </label>
+                </div>
+                <hr />
+
+                <div class="form-check form-check-reverse mt-4">
+                    <input type="text" name="BeratSampah" value="" id="reverseCheck1">
+                    <label class="form-check-label" for="reverseCheck1">
+                        <i class="fa fa-tv"></i> Total Berat Sampah
                     </label>
                 </div>
 

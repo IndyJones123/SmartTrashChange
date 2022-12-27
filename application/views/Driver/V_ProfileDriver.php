@@ -20,7 +20,7 @@
             <div class="container-fluid ml-4 ml-sm-5"><a class="navbar-brand" href="#">TRASHCHANGE</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav text-right text-white ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?php echo base_url() ?>DriverOrder"> My Order</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="<?php echo base_url() ?>Pesanan/read_pesanan"> My Order</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="<?php echo base_url() ?>ProfileDriver">My History</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link active" href="<?php echo base_url() ?>ProfileDriver">My Profile</a></li>
                     </ul>
