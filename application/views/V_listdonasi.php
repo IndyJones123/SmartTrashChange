@@ -18,7 +18,7 @@
 
 </head>
 <!-- header -->
-<div class="mt-lg-3 container px-3 bg-grey">
+<div class=" mt-lg-3 container px-3 bg-grey">
     <div class="d-flex">
         <div class="d-flex align-items-center " id="navbar">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
@@ -59,44 +59,26 @@
             <div class="d-flex align-items-center mb-3 px-md-3 px-2"> <span class="text-uppercase fs13 fw-bolder pe-3 mb-3">search<span class="ps-1">by</span></span>
                 <form class="example d-flex align-items-center mb-3"> <input type="text" placeholder="Cari Sesuatu..." name="search"> <button type="submit"><i class="fa fa-search"></i></button> </form>
             </div>
-            <a href="<?= base_url('Updatesampah/tambah') ?>" class=" ps-3 btn btn-primary btn-sm px-2 pe-3 mb-3 ">Tambah Data</a>
             <div class="container text-center">
-                <p class="teks-pesanan"> List Sampah </p>
+                <p class="teks-pesanan"> List Pelanggan </p>
                 <div class="container text-center">
                     <table class="table table-striped">
                         <thead>
                             <tr>
-                                <th scope="col"> No </th>
-                                <th scope="col"> Kategori </th>
-                                <th scope="col"> Jenis </th>
-                                <th scope="col"> Jumlah </th>
-                                <th scope="col"> Satuan </th>
-                                <th scope="col"> Harga </th>
-                                <th scope="col"> Action </th>
+                                <th scope="col">ID_Donasi</th>
+                                <th scope="col">Username </th>
+                                <th scope="col">TcPoints</th>
+                                <th scope="col">Y-M-D</th>
                             </tr>
                         </thead>
 
-                        <?php
-                        $no = 1;
-                        foreach ($updatesampah as $ush) : ?>
+                        <?php foreach ($donasi as $data) : ?>
                             <tr>
-                                <td><?php echo $no++ ?></td>
-                                <td><?php echo $ush->kategori ?></td>
-                                <td><?php echo $ush->jenis ?></td>
-                                <td><?php echo $ush->satuan ?></td>
-                                <td><?php echo $ush->satuankilo ?></td>
-                                <td>Rp. <?php echo $ush->hargamin ?> - <?php echo $ush->harga ?></td>
-                                <td>
-                                    <a href=" <?= site_url('Updatesampah/edit/' . $ush->id) ?>" class="btn btn-sm btn-success"><i class="fa fa-pencil small"></i>Update</a>
-                                </td>
-                                <td onclick="javascript: return confirm('Anda Yakin Hapus?')">
-                                    <form action="<?= site_url('Updatesampah/hapus/') ?>" method="post">
-                                        <input type="hidden" name="id" value="<?= $ush->id ?>">
-                                        <button class="btn btn-sm btn-danger"><i class="fa fa-trash small"></i>Delete</button>
-                                    </form>
-                                </td>
+                                <td><?php echo $data->Id_Donation ?></td>
+                                <td><?php echo $data->Username ?></td>
+                                <td><?php echo $data->TcPoints ?></td>
+                                <td><?php echo $data->date_created ?></td>
                             </tr>
-
                         <?php endforeach; ?>
 
                         <div class="d-flex align-items-center justify-content-between px-3 mt-3">

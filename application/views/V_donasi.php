@@ -32,7 +32,7 @@
         </ul>
         <div class="logo2">
             <a href="#">
-            <img src="<?php echo base_url() ?>assets/assets/icon-navbar.png" alt="">
+                <img src="<?php echo base_url() ?>assets/assets/icon-navbar.png" alt="">
             </a>
         </div>
         <div class="bx bx-menu" id="menu-icon"></div>
@@ -43,55 +43,45 @@
     <main>
 
         <div class="container text-center">
-        <p class="teks-pesanan">Donasi</p>
+            <p class="teks-pesanan">Donasi</p>
         </div>
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <div class="image"><img src="https://img.icons8.com/color/96/000000/meeting.png"/></div>
+                    <div class="image"><img src="https://img.icons8.com/color/96/000000/meeting.png" /></div>
                     <h6 class="mt-3 text-center">Tc Donasi</h6>
                     <p>Rela Mengelola Sampah Demi Kebahagiaan Bersama <br>
-                    Tc Donasi Untuk Mendukung Keluarga Lebih Sehat dan Bahagia  </p>
+                        Tc Donasi Untuk Mendukung Keluarga Lebih Sehat dan Bahagia </p>
                 </div>
 
-                <div class="col-md-8">	
-                    <form class="information">
+                <div class="col-md-8">
+                    <form class="information" method="POST" action="Donasi/donasi">
                         <h4 class="form-heading">Selamat Datang Orang Baik :)</h4>
                         <p class="form-para">
-                            Terima kasih kalian yang telah rela mendonasikan Tc Point anda ke orang yang anda pilih, 
+                            Terima kasih kalian yang telah rela mendonasikan Tc Point anda ke orang yang anda pilih,
                             semoga apa yang kamu berikan bisa kembali dengan lebih baik lagi.
                         </p>
-                          
+
                         <div class="input-group mt-4">
-                            <input type="text" class="input" required id="name"/>
-                            <label for="name" class="input-label">Masukkan Nama</label>
-                         </div>
+                            <input type="text" name="Username" class="input" required id="name" value="<?php echo $this->session->userdata('Username'); ?>" readonly />
 
-                         <div class="input-group mt-4">
-                            <input type="text" class="input" required id="jumlah"/>
-                            <label for="jumlah" class="input-label">Jumlah</label>
-                         </div>
+                        </div>
 
-                         <div class="input-group mt-4">
-                            <input type="text" class="input" required id="tujuan"/>
-                            <label for="tujuan" class="input-label">Tujuan</label>
-                         </div>
+                        <div class="input-group mt-4">
+                            <input type="text" name="TcPoints" class="input" required id="TcPoints" value="<?php echo $this->session->userdata('TcPoints'); ?>" readonly />
 
-                         <div class="input-group mt-4">
-                            <input type="text" class="input" required id="name"/>
-                            <label for="name" class="input-label">Nama Penerima</label>
-                         </div>
-    
-                         <div class="form-group mt-5">
-                            <button type="button" class="btn btn-outline-success">
+                        </div>
+
+                        <div class="form-group mt-5">
+                            <button type="submit" class="btn btn-outline-success">
                                 <span>Kirim Donasi &nbsp;<i class="fas fa-arrow-right"></i></span>
                             </button>
-                            </div>
-                         
+                        </div>
+
                     </form>
                 </div>
             </div>
-            </div>
+        </div>
     </main>
     <!-- end -->
 

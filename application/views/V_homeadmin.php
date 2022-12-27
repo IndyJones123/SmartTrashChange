@@ -40,7 +40,6 @@
         </div>
         <div class="d-md-flex">
             <ul id="navbar-items" class="">
-
                 <li>
                     <i class="fas fa-comment-alt px-2 ps-0"></i><a href="<?= site_url('homeadmin') ?>" class="nav-link active">History Pemesanan</a>
                 </li>
@@ -51,7 +50,10 @@
                     <i class="fas fa-chart-line px-2 ps-0"></i><a href="<?= site_url('updatesampah') ?>" class="nav-link">List Sampah</a>
                 </li>
                 <li>
-                    <i class="fas fa-fw fa-sign-out-alt px-4 ps-0"></i><a href="<?= site_url('Welcome') ?>" class="nav-link">Logout</a>
+                    <i class="fas fa-chart-line px-2 ps-0"></i><a href="<?= site_url('Donasi/read_donasi') ?>" class="nav-link">List Donasi</a>
+                </li>
+                <li>
+                    <i class="fas fa-fw fa-sign-out-alt px-4 ps-0"></i><a href="<?= site_url('Registration/logout') ?>" class="nav-link">Logout</a>
                 </li>
             </ul>
 
@@ -82,78 +84,78 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            <tr>
-                            <th scope="row">1</th>
-                            <td>Alvin</td>
-                            <td>Jl. Adirasa No.20</td>
-                            <td>Kertas</td>
-                            <td>Koran</td>
-                            <td>12 Desember 2022</td>
-                            <td>2 Kg</td>
-                            <td>Rp. 2000</td>
-                            <td><a href="pesan_berhasil_admin.html" class="btn btn-sm btn-success">Terima</a></td>
-                            <td><a href="pesan_gagal_admin.html" class="btn btn-sm btn-danger">Tolak</a></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">2</th>
-                            <td>Pandu</td>
-                            <td>Jl. veteran nomer 35</td>
-                            <td>Kertas</td>
-                            <td>HVS</td>
-                            <td>10 Desember 2022</td>
-                            <td>2 Kg</td>
-                            <td>Rp. 4000</td>
-                            <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
-                            <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>Dorif</td>
-                            <td>Jl. kudus raya nomer 27</td>
-                            <td>Kaca</td>
-                            <td>Botol Minuman Besar</td>
-                            <td>30 Desember 2022</td>
-                            <td>5 Botol</td>
-                            <td>Rp. 5000</td>
-                            <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
-                            <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">4</th>
-                            <td>Isan</td>
-                            <td>Jl. semarang nomer 18</td>
-                            <td>Elektronik</td>
-                            <td>TV</td>
-                            <td>20 Desember 2022</td>
-                            <td>1 TV</td>
-                            <td>Rp. 100.000</td>
-                            <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
-                            <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
-                        </tr>    
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Hanif</td>
-                            <td>Jl. kertajaya nomer 15</td>
-                            <td>plastik</td>
-                            <td>gelas</td>
-                            <td>5 Desember 2022</td>
-                            <td>10 gelas plastik</td>
-                            <td>Rp. 10.000</td>
-                            <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
-                            <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">6</th>
-                            <td>Desya</td>
-                            <td>Jl. Rungkut nomer 76</td>
-                            <td>aluminium</td>
-                            <td>panci</td>
-                            <td>1 Desember 2022</td>
-                            <td>3 panci </td>
-                            <td>Rp. 35.000</td>
-                            <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
-                            <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
-                        </tr>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Alvin</td>
+                                    <td>Jl. Adirasa No.20</td>
+                                    <td>Kertas</td>
+                                    <td>Koran</td>
+                                    <td>12 Desember 2022</td>
+                                    <td>2 Kg</td>
+                                    <td>Rp. 2000</td>
+                                    <td><a href="pesan_berhasil_admin.html" class="btn btn-sm btn-success">Terima</a></td>
+                                    <td><a href="pesan_gagal_admin.html" class="btn btn-sm btn-danger">Tolak</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Pandu</td>
+                                    <td>Jl. veteran nomer 35</td>
+                                    <td>Kertas</td>
+                                    <td>HVS</td>
+                                    <td>10 Desember 2022</td>
+                                    <td>2 Kg</td>
+                                    <td>Rp. 4000</td>
+                                    <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
+                                    <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Dorif</td>
+                                    <td>Jl. kudus raya nomer 27</td>
+                                    <td>Kaca</td>
+                                    <td>Botol Minuman Besar</td>
+                                    <td>30 Desember 2022</td>
+                                    <td>5 Botol</td>
+                                    <td>Rp. 5000</td>
+                                    <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
+                                    <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Isan</td>
+                                    <td>Jl. semarang nomer 18</td>
+                                    <td>Elektronik</td>
+                                    <td>TV</td>
+                                    <td>20 Desember 2022</td>
+                                    <td>1 TV</td>
+                                    <td>Rp. 100.000</td>
+                                    <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
+                                    <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Hanif</td>
+                                    <td>Jl. kertajaya nomer 15</td>
+                                    <td>plastik</td>
+                                    <td>gelas</td>
+                                    <td>5 Desember 2022</td>
+                                    <td>10 gelas plastik</td>
+                                    <td>Rp. 10.000</td>
+                                    <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
+                                    <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Desya</td>
+                                    <td>Jl. Rungkut nomer 76</td>
+                                    <td>aluminium</td>
+                                    <td>panci</td>
+                                    <td>1 Desember 2022</td>
+                                    <td>3 panci </td>
+                                    <td>Rp. 35.000</td>
+                                    <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
+                                    <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
+                                </tr>
                             </tbody>
                         </table>
                         </ol>

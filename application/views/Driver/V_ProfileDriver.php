@@ -26,7 +26,7 @@
                     </ul>
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item"></li>
-                        <li class="nav-item"><a class="nav-link" href="#"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="<?php echo base_url(); ?>Registration/logout"><i>Logout</i></a></li>
                         <li class="nav-item"></li>
                     </ul>
                 </div>

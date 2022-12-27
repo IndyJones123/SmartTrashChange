@@ -24,9 +24,9 @@
 
         <ul class="navbar">
             <li><a href="<?php echo base_url(); ?>home" class="active"> Beranda</a></li>
-            <li><a href="<?php echo base_url(); ?>Pemesanan/index">Transaksi</a></li>
             <li><a href="<?php echo base_url(); ?>Chat/index">Chat</a></li>
             <li><a href="<?php echo base_url(); ?>Kelolaakun/index">Kelola Akun</a></li>
+            <li><a href="<?php echo base_url(); ?>Registration/Logout">Logout</a></li>
         </ul>
         <div class="logo2">
             <a href="#">
@@ -51,64 +51,39 @@
                 <p>Order layanan Pickup, driver akan menjemput sampahmu. Lihat panduan berat sampah
                     <a href="<?php echo base_url(); ?>Guidance">di sini.</a>
                 </p>
-                <p class="teks-pickup2">Informasi Sampah</p>
-                <p class="teks-pickup3"> Pilih jenis sampah dan masukkan perkiraan berat sampah. Tidak ada batasan berat minimal penjemputan. </p>
+                <p class="teks-pickup2">Informasi Identitas</p>
+                <p class="teks-pickup3">Pastikan informasi anda benar. Tidak ada batasan berat minimal penjemputan. </p>
             </div>
         </div>
 
         <div class="container mt-5">
             <form class="pickup">
                 <div class="form-check form-check-reverse">
-                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
+                    <input type="text" name="Username" value="<?php echo $this->session->userdata('Username'); ?>" id="reverseCheck1">
                     <label class="form-check-label" for="reverseCheck1">
-                        <i class="fas fa-book"></i> Kertas
+                        <i class="fas fa-book"></i> Username
                     </label>
                 </div>
                 <hr />
 
                 <div class="form-check form-check-reverse mt-4">
-                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
+                    <input type="text" name="Alamat" value="<?php echo $this->session->userdata('Alamat'); ?>" id="reverseCheck1">
                     <label class="form-check-label" for="reverseCheck1">
-                        <i class="fas fa-gift"></i>Plastik
+                        <i class="fas fa-gift"></i> Alamat
                     </label>
                 </div>
                 <hr />
 
                 <div class="form-check form-check-reverse mt-4">
-                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
+                    <input type="text" name="Jenis Sampah" value="" id="reverseCheck1">
                     <label class="form-check-label" for="reverseCheck1">
-                        <i class="fa fa-tv"></i>elektronik
+                        <i class="fa fa-tv"></i> Jenis Sampah
                     </label>
                 </div>
-                <hr />
 
-                <div class="form-check form-check-reverse mt-4">
-                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
-                    <label class="form-check-label" for="reverseCheck1">
-                        <i class="fas fa-wrench"></i>Besi
-                    </label>
-                </div>
-                <hr />
-
-                <div class="form-check form-check-reverse mt-4">
-                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
-                    <label class="form-check-label" for="reverseCheck1">
-                        <i class="fas fa-atom"></i>Aluminium
-                    </label>
-                </div>
-                <hr />
-
-                <div class="form-check form-check-reverse mt-4">
-                    <input class="form-check-input" type="checkbox" value="" id="reverseCheck1">
-                    <label class="form-check-label" for="reverseCheck1">
-                        <i class="fas fa-wine-bottle"></i>Botol Kaca
-                    </label>
-                </div>
-                <hr />
-
-                <div class="pickup-kirim">
+                <div class="pickup-kirim" style="text-align: center;">
                     <p>
-                        <a href="#">Pesan</a>
+                        <button type="submit">Panggil Driver</button>
                     </p>
                 </div>
             </form>

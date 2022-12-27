@@ -41,10 +41,13 @@
                 <i class="fas fa-comment-alt px-2 ps-0"></i><a href="<?= site_url('homeadmin') ?>" class="nav-link active">History Pemesanan</a>
             </li>
             <li>
-                <i class="fas fa-calendar-alt px-2 ps-0"></i><a href="<?= site_url('updatesampah') ?>" class="nav-link">Data Pelanggan</a>
+                <i class="fas fa-calendar-alt px-2 ps-0"></i><a href="<?php echo base_url(); ?>Pelanggan" class="nav-link">Data Pelanggan</a>
             </li>
             <li>
                 <i class="fas fa-chart-line px-2 ps-0"></i><a href="<?= site_url('updatesampah') ?>" class="nav-link">List Sampah</a>
+            </li>
+            <li>
+                <i class="fas fa-chart-line px-2 ps-0"></i><a href="<?= site_url('Donasi/read_donasi') ?>" class="nav-link">List Donasi</a>
             </li>
             <li>
                 <i class="fas fa-fw fa-sign-out-alt px-4 ps-0"></i><a href="<?= site_url('Registration/logout') ?>" class="nav-link">Logout</a>
