@@ -44,6 +44,9 @@
                 <i class="fas fa-calendar-alt px-2 ps-0"></i><a href="<?php echo base_url(); ?>Pelanggan" class="nav-link">Data Pelanggan</a>
             </li>
             <li>
+                <i class="fas fa-calendar-alt px-2 ps-0"></i><a href="<?= site_url('Datadriver') ?>" class="nav-link active">Data Driver</a>
+            </li>
+            <li>
                 <i class="fas fa-chart-line px-2 ps-0"></i><a href="<?= site_url('updatesampah') ?>" class="nav-link">List Sampah</a>
             </li>
             <li>
@@ -61,7 +64,7 @@
             </div>
             <a href="<?= base_url('Updatesampah/tambah') ?>" class=" ps-3 btn btn-primary btn-sm px-2 pe-3 mb-3 ">Tambah Data</a>
             <div class="container text-center">
-                <p class="teks-pesanan"> List Sampah </p>
+                <p class="teks-pesanan"> Daftar Sampah </p>
                 <div class="container text-center">
                     <table class="table table-striped">
                         <thead>
