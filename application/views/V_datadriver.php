@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home Admin</title>
+    <title>Data Driver</title>
     <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styleadmin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -60,105 +60,80 @@
 
             <div id="topnavbar">
                 <div class="topnav mb-3">
-                    <div class="d-flex px-1">
-                        <p> Selamat Datang Admin <strong><?php echo $this->session->userdata('Username'); ?></strong> </p>
-                    </div>
                 </div>
                 <div class="d-flex align-items-center mb-3 px-md-3 px-2"> <span class="text-uppercase fs13 fw-bolder pe-3">search<span class="ps-1">by</span></span>
                     <form class="example d-flex align-items-center"> <input type="text" placeholder="Cari Sesuatu..." name="search"> <button type="submit"><i class="fa fa-search"></i></button> </form>
                 </div>
                 <div class="container text-center">
-                    <p class="teks-pesanan"> History Pemesanan </p>
+                    <p class="teks-pesanan"> Data Driver </p>
                     <div class="container text-center">
-                        <table class="table table-striped">
-                            <thead>
-                                <tr>
-                                    <th scope="col"> No </th>
-                                    <th scope="col"> Nama </th>
-                                    <th scope="col"> Alamat </th>
-                                    <th scope="col"> Kategori Sampah </th>
-                                    <th scope="col"> Jenis Sampah </th>
-                                    <th scope="col"> Tanggal Pemesanan </th>
-                                    <th scope="col"> Total Sampah </th>
-                                    <th scope="col"> Harga </th>
-                                    <th scope="col"> Action </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
+                    <table class="table table-bordered">
+                        <thead>
+                          <tr>
+                            <th scope="col"> No </th>
+                            <th scope="col"> Nama </th>
+                            <th scope="col"> Gender </th>
+                            <th scope="col"> No. telp </th>
+                            <th scope="col"> Alamat </th>
+                            <th scope="col"> Rating </th>
+                            <th scope="col"> Member </th>
+                            <th scope="col"> Total perjalanan </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
                             <th scope="row">1</th>
-                            <td>Alvin</td>
-                            <td>Jl. Adirasa No.20</td>
-                            <td>Kertas</td>
-                            <td>Koran</td>
-                            <td>12 Desember 2022</td>
-                            <td>2 Kg</td>
-                            <td>Rp. 2000</td>
-                            <td><a href="pesan_berhasil_admin.html" class="btn btn-sm btn-success">Terima</a></td>
-                            <td><a href="pesan_gagal_admin.html" class="btn btn-sm btn-danger">Tolak</a></td>
-                          </tr>
-                          <tr>
+                            <td>Bambang</td>                                
+                            <td>Laki-Laki</td>
+                            <td>0812345678</td>
+                            <td>Jl. ni aja No.20</td>
+                            <td>4</td>
+                            <td>Pro </td>
+                            <td>154 Jam</td>
+                        </tr>
+                        <tr>
                             <th scope="row">2</th>
-                            <td>Pandu</td>
-                            <td>Jl. veteran nomer 35</td>
-                            <td>Kertas</td>
-                            <td>HVS</td>
-                            <td>10 Desember 2022</td>
-                            <td>2 Kg</td>
-                            <td>Rp. 4000</td>
-                            <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
-                            <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">3</th>
-                            <td>Dorif</td>
-                            <td>Jl. kudus raya nomer 27</td>
-                            <td>Kaca</td>
-                            <td>Botol Minuman Besar</td>
-                            <td>30 Desember 2022</td>
-                            <td>5 Botol</td>
-                            <td>Rp. 5000</td>
-                            <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
-                            <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
-                          </tr>
-                          <tr>
-                            <th scope="row">4</th>
-                            <td>Isan</td>
-                            <td>Jl. semarang nomer 18</td>
-                            <td>Elektronik</td>
-                            <td>TV</td>
-                            <td>20 Desember 2022</td>
-                            <td>1 TV</td>
-                            <td>Rp. 100.000</td>
-                            <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
-                            <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
-                        </tr>    
-                        <tr>
-                            <th scope="row">5</th>
-                            <td>Hanif</td>
-                            <td>Jl. kertajaya nomer 15</td>
-                            <td>plastik</td>
-                            <td>gelas</td>
-                            <td>5 Desember 2022</td>
-                            <td>10 gelas plastik</td>
-                            <td>Rp. 10.000</td>
-                            <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
-                            <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
+                            <td>Hendra</td>
+                            <td>Laki-Laki</td>
+                            <td>0812345678</td>
+                            <td>Jl. gusdur nomer 35</td>
+                            <td>4.2</td>
+                            <td>Pro </td>
+                            <td>188 Jam</td>
                         </tr>
                         <tr>
-                            <th scope="row">6</th>
-                            <td>Desya</td>
-                            <td>Jl. Rungkut nomer 76</td>
-                            <td>aluminium</td>
-                            <td>panci</td>
-                            <td>1 Desember 2022</td>
-                            <td>3 panci </td>
-                            <td>Rp. 35.000</td>
-                            <td><a href="" class="btn btn-sm btn-success">Terima</a></td>
-                            <td><a href="" class="btn btn-sm btn-danger">Tolak</a></td>
+                          <th scope="row">5</th>
+                          <td>Yunita</td>
+                          <td>Perempuan</td>
+                          <td>08255443556</td>
+                          <td>Jl. Gunung Anyar nomer 13</td>
+                          <td>3.7</td>
+                          <td>Pro</td>
+                          <td>180 Jam</td>
                         </tr>
-                            </tbody>
-                        </table>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Yudi</td>
+                          <td>Laki-Laki</td>
+                          <td>0812345678</td>
+                          <td>Jl. kalibanteng nomer 27</td>
+                          <td>3.8</td>
+                          <td>Super</td>
+                          <td>101 Jam</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>Anita</td>
+                          <td>Perempuan</td>
+                          <td>0852356645</td>
+                          <td>Jl. Banyiwangi nomer 30</td>
+                          <td>3.6</td>
+                          <td>Pemula</td>
+                          <td>40 Jam</td>
+                        </tr>
+                    </tbody>
+                </table>
                         </ol>
 
                     </div>

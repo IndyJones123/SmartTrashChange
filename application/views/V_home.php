@@ -136,7 +136,9 @@
     <footer>
         <div id="container">
             <div class="main-content">
-
+            <div class="logo-footer">
+                    <img src="<?php echo base_url() ?>assets/assets/logo.png" alt="">
+                </div>
                 <div class="left box">
                     <h2>About us</h2>
                     <div class="content">
