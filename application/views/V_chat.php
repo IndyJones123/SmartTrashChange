@@ -63,7 +63,7 @@
         <p>Ayo Mulai Mengirim Pesan !</p>
     </div>
     <!-- end -->
-    
+
     <!-- footer -->
     <footer>
 
@@ -90,10 +90,10 @@
                     <h2>Link Terkait</h2>
                     <div class="content">
                         <ul class="list-link">
-                            <li><a href="home.html">Beranda</a></li>
-                            <li><a href="pesanan.html">Transaksi</a></li>
-                            <li><a href="chat.html">chat</a></li>
-                            <li><a href="kelola_akun.html">kelola Akun</a></li>
+                            <li><a href="<?php echo base_url(); ?>Home">Beranda</a></li>
+                            <li><a href="<?php echo base_url(); ?>Pemesanan/index">Transaksi</a></li>
+                            <li><a href="<?php echo base_url(); ?>Chat/index">chat</a></li>
+                            <li><a href="<?php echo base_url(); ?>Kelolaakun/index">kelola Akun</a></li>
                         </ul>
                     </div>
                 </div>

@@ -167,10 +167,10 @@
                     <h2>Anggota Kelompok</h2>
                     <div class="content">
                         <ul class="list-link">
-                            <li><a href="#">Alfian Dorif Murtadlo 20081010251</a></li>
-                            <li><a href="#">Transaksi</a></li>
-                            <li><a href="#">chat</a></li>
-                            <li><a href="#">kelola Akun</a></li>
+                            <li><a href="<?php echo base_url(); ?>Home">Beranda</a></li>
+                            <li><a href="<?php echo base_url(); ?>Pemesanan/index">Transaksi</a></li>
+                            <li><a href="<?php echo base_url(); ?>Chat/index">chat</a></li>
+                            <li><a href="<?php echo base_url(); ?>Kelolaakun/index">kelola Akun</a></li>
                         </ul>
                     </div>
                 </div>
