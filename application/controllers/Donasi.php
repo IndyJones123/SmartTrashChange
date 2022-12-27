@@ -22,6 +22,7 @@ class Donasi extends CI_Controller
 
     public function donasi()
     {
+        echo "<script>alert('Donasi Telah Berhasil Dikirim !');</script>";
         $this->M_donasi->insert_donasi();
         redirect('Registration/logout');
     }
