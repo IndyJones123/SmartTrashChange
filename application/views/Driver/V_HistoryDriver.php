@@ -27,7 +27,7 @@
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="nav navbar-nav text-right text-white ml-auto">
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" href="<?php echo base_url() ?>DriverOrder"> My Order</a>
+                            <a class="nav-link" href="<?php echo base_url() ?>Pesanan/read_pesanan"> My Order</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link" href="<?php echo base_url() ?>HistoryDriver">My History</a>
@@ -55,9 +55,6 @@
     <main>
 
         <div class="container">
-            <div class="text-nav text-white">
-                <h5>Riwayat Pemesanan</h5>
-            </div>
         </div>
 
         <div class="container d-flex justify-content-center mt-5">

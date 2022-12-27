@@ -10,7 +10,14 @@ class M_pesanan extends CI_Model
     //get data mahasiswa
     public function get_pesanan()
     {
-        $sql = "SELECT * FROM pesanan";
+        $sql = "SELECT * FROM pesanan WHERE Situation = 0";
+        $data = $this->db->query($sql);
+        return $data->result();
+    }
+
+    public function get_pesanan_admin()
+    {
+        $sql = "SELECT * FROM pesanan WHERE Situation = 1";
         $data = $this->db->query($sql);
         return $data->result();
     }
@@ -27,8 +34,42 @@ class M_pesanan extends CI_Model
             'NamaPelanggan' => $Username,
             'AlamatPelanggan' => $Alamat,
             'Sampah' => $Sampah,
-            'BeratSampah' => $BeratSampah
+            'BeratSampah' => $BeratSampah,
         );
+
+        $data2 = array(
+            'TcPoints' => +5
+        );
+
         $this->db->insert('pesanan', $data);
+        $where = array(
+            'Username' => $Username
+        );
+        $this->db->where($where);
+        $this->db->update('Account', $data2);
+    }
+
+    public function delete_pesanan($id)
+    {
+        $this->db->delete('pesanan', array('id_pesanan' => $id));
+    }
+
+    public function update_pesanan($id_pesanan)
+    {
+        $UpahDriver = $this->input->post('UpahDriver');
+        $NamaDriver = $this->input->post('NamaDriver');
+
+        $data = array(
+            'UpahDriver' => $UpahDriver,
+            'NamaDriver' => $NamaDriver,
+            'Situation' => 1
+        );
+
+        $where = array(
+            'id_pesanan' => $id_pesanan
+        );
+
+        $this->db->where($where);
+        $this->db->update('pesanan', $data);
     }
 }

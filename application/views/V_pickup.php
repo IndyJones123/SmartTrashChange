@@ -23,7 +23,7 @@
         </a>
 
         <ul class="navbar">
-            <li><a href="<?php echo base_url(); ?>home" class="active"> Beranda</a></li>
+            <li><a href="<?php echo base_url(); ?>home"> Beranda</a></li>
             <li><a href="<?php echo base_url(); ?>Chat/index">Chat</a></li>
             <li><a href="<?php echo base_url(); ?>Kelolaakun/index">Kelola Akun</a></li>
             <li><a href="<?php echo base_url(); ?>Registration/Logout">Logout</a></li>
@@ -59,7 +59,7 @@
         <div class="container mt-5">
             <form class="pickup" method="post" action="Pesanan/pesanan">
                 <div class="form-check form-check-reverse">
-                    <input type="text" name="Username" value="<?php echo $this->session->userdata('Username'); ?>" id="reverseCheck1">
+                    <input type="text" name="Username" value="<?php echo $this->session->userdata('Username'); ?>" id="reverseCheck1" readonly>
                     <label class="form-check-label" for="reverseCheck1">
                         <i class="fas fa-book"></i> Username
                     </label>

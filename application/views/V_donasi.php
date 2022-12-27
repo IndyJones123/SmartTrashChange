@@ -25,10 +25,10 @@
 
         <ul class="navbar">
 
-            <li><a href="<?php echo base_url(); ?>home" class="active"> Beranda</a></li>
-            <li><a href="<?php echo base_url(); ?>Pemesanan/index">Transaksi</a></li>
+            <li><a href="<?php echo base_url(); ?>home"> Beranda</a></li>
             <li><a href="<?php echo base_url(); ?>Chat/index">Chat</a></li>
             <li><a href="<?php echo base_url(); ?>Kelolaakun/index">Kelola Akun</a></li>
+            <li><a href="<?php echo base_url(); ?>Registration/Logout">Logout</a></li>
         </ul>
         <div class="logo2">
             <a href="#">

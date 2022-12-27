@@ -6,11 +6,12 @@ class homeadmin extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('m_admin');
+        $this->load->model('M_pesanan');
     }
 
     public function index()
     {
-        $this->load->view('V_homeadmin');
+        $data['pesanan'] = $this->M_pesanan->get_pesanan_admin();
+        $this->load->view('V_homeadmin', $data);
     }
 }

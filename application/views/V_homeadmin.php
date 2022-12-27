@@ -86,14 +86,18 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <th scope="row">1</th>
-                                    <td>Alvin</td>
-                                    <td>Jl. Adirasa No.20</td>
-                                    <td>Kertas</td>
-                                    <td>Koran</td>
-                                    <td>12 Desember 2022</td>
-                                    <td>2 Kg</td>
+                                    <?php foreach ($pesanan as $data) : ?>
+                                <tr>
+                                    <td><?php echo $data->id_pesanan ?></td>
+                                    <td><?php echo $data->NamaPelanggan ?></td>
+                                    <td><?php echo $data->NamaDriver ?></td>
+                                    <td><?php echo $data->Sampah ?></td>
+                                    <td><?php echo $data->BeratSampah ?></td>
+                                    <td><?php echo $data->AlamatPelanggan ?></td>
+                                    <td><?php echo $data->UpahDriver ?></td>
                                 </tr>
+                            <?php endforeach; ?>
+                            </tr>
                             </tbody>
                         </table>
                         </ol>

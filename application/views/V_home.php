@@ -106,7 +106,7 @@
                 <img src="<?php echo base_url(); ?>assets/assets/sampah1.jpg" class="card-img-top" alt="...">
                 <div class="m-3">
                     <h5 class="card-title">Kertas</h5>
-                    <p class="card-text">Up to Rp5000,- <span>/kg</span></p>
+                    <p class="card-text">+ 1 TcPoints,- <span>/kg</span></p>
                     <p class="card-text"><small class="text-muted">Kertas banyak ditemui di sampah perkantoran. Sampah kertas bisa berupa koran, majalah, dan sebagainya.</small></p>
                 </div>
             </div>
@@ -114,7 +114,7 @@
                 <img src="<?php echo base_url(); ?>assets/assets/sampah2.jpg" class="card-img-top" alt="...">
                 <div class="m-3">
                     <h5 class="card-title">Kaca</h5>
-                    <p class="card-text">Up to Rp10000,- <span>/unit</span></p>
+                    <p class="card-text">+ 3 TcPoints,- <span>/kg</span></p>
                     <p class="card-text"><small class="text-muted">Restoran dan rumah tangga merupakan sumber sampah kaca yang biasanya berupa botol kaca bekas.</small></p>
                 </div>
             </div>
@@ -122,7 +122,7 @@
                 <img src="<?php echo base_url(); ?>assets/assets/sampah3.jpg" class="card-img-top" alt="...">
                 <div class="m-3">
                     <h5 class="card-title">Elektronik</h5>
-                    <p class="card-text">Up to Rp200000,- <span>/unit</span></p>
+                    <p class="card-text">+ 5 TcPoints,- <span>/kg</span></p>
                     <p class="card-text"><small class="text-muted">Barang elektronik yang telah rusak, seperti mesin cuci, kipas angin, dan lain-lain sering kali terbengkalai.</small></p>
                 </div>
             </div>
@@ -136,7 +136,7 @@
     <footer>
         <div id="container">
             <div class="main-content">
-            <div class="logo-footer">
+                <div class="logo-footer">
                     <img src="<?php echo base_url() ?>assets/assets/logo.png" alt="">
                 </div>
                 <div class="left box">

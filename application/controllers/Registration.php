@@ -59,7 +59,7 @@ class Registration extends CI_Controller
 
 						if ($this->session->userdata('role_id') == "1") {
 							$data['hosting'] = $this->M_home->get_hosting();
-							$this->load->view("V_homeadmin", $data);
+							redirect('Homeadmin', $data);
 						} elseif (($this->session->userdata('role_id') == "0")) {
 							$data['hosting'] = $this->M_home->get_hosting();
 							$this->load->view("V_home", $data);

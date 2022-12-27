@@ -52,48 +52,58 @@
 
                 <div>
                     <?php foreach ($pesanan as $data) : ?>
-                        <form action="" method="POST">
-                            <div class="card-order p-4">
+                        <div class="card-order p-4">
 
-                                <div class="top-container d-flex justify-content-start align-items-center">
-                                    <div class="text-cus1">
-                                        <i class="text-white fas fa-face-grin-stars"></i>
+                            <div class="top-container d-flex justify-content-start align-items-center">
+                                <div class="text-cus1">
+                                    <i class="text-white fas fa-face-grin-stars"></i>
+                                </div>
+                                <span class="shipped pl-2"><?php echo $data->NamaPelanggan ?></span>
+                            </div>
+
+                            <div class="middle-container pt-4 d-flex align-items-center justify-content-between">
+                                <div>
+                                    <img src="<?php echo base_url(); ?>Assets/css/account-6491185_960_720.webp" class="img-fluid " width="90">
+                                </div>
+
+                                <div class="d-flex flex-column text-right">
+                                    <span class="item-name"><?php echo $data->Sampah ?></span>
+                                    <span class="item-quantity"><?php echo $data->BeratSampah ?> Kg</span>
+                                    <div class="item-price-container mt-3">
+                                        <span class="item-price">
+                                            <span class="dollar">Rp </span><?php echo convertupah($data->BeratSampah); ?></span>
                                     </div>
-                                    <span class="shipped pl-2"><?php echo $data->NamaPelanggan ?></span>
-                                </div>
-
-                                <div class="middle-container pt-4 d-flex align-items-center justify-content-between">
-                                    <div>
-                                        <img src="<?php echo base_url(); ?>Assets/css/account-6491185_960_720.webp" class="img-fluid " width="90">
-                                    </div>
-
-                                    <div class="d-flex flex-column text-right">
-                                        <span class="item-name"><?php echo $data->Sampah ?></span>
-                                        <span class="item-quantity"><?php echo $data->BeratSampah ?> Kg</span>
-                                        <div class="item-price-container mt-3">
-                                            <span class="item-price">
-                                                <span class="dollar">Rp </span><?php echo convertupah($data->BeratSampah); ?></span>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="d-flex align-items-center mt-2">
-                                    <i class="fas fa-trophy"></i>
-                                    <span class="reward-points pl-2"><?php echo convertrewards($data->BeratSampah); ?></span>
-                                    <span class="reward-points-text">Rewards Points</span>
-                                </div>
-
-                                <div class="d-flex align-items-center mt-2">
-                                    <i class="fas fa-trophy"></i>
-                                    <span class="reward-points pl-2"><?php echo $data->AlamatPelanggan; ?></span>
-                                </div>
-
-                                <div class="d-flex justify-content-between align-items-center mt-5 pb-3">
-                                    <button class="btn btn-outline-warning">Tolak</button>
-                                    <button class="btn btn-success" type="button">Done</button>
                                 </div>
                             </div>
-                        </form>
+
+                            <div class="d-flex align-items-center mt-2">
+                                <i class="fas fa-trophy"></i>
+                                <span class="reward-points pl-2"><?php echo convertrewards($data->BeratSampah); ?></span>
+                                <span class="reward-points-text">Rewards Points</span>
+                            </div>
+
+                            <div class="d-flex align-items-center mt-2">
+                                <i class="fas fa-trophy"></i>
+                                <span class="reward-points pl-2"><?php echo $data->AlamatPelanggan; ?></span>
+                            </div>
+
+                            <div class="d-flex justify-content-between align-items-center mt-5 pb-3">
+                                <td onclick="javascript: return confirm('Anda Yakin Hapus?')">
+                                    <form action="<?php echo base_url('Pesanan/delete_pesanan/' . $data->id_pesanan) ?>" method="post">
+                                        <input type="hidden" name="id_pesanan" value="<?= $data->id_pesanan ?>">
+                                        <button type="submit" class="btn btn-sm btn-danger"><i class="fa fa-trash small"></i>Delete</button>
+                                    </form>
+                                </td>
+                                <td onclick="javascript: return confirm('Anda Yakin Menerima Pesanan?')">
+                                    <form action="<?php echo base_url('Pesanan/update_pesanan/' . $data->id_pesanan) ?>" method="post">
+                                        <input type="hidden" name="id_pesanan" value="<?= $data->id_pesanan ?>">
+                                        <input type="hidden" name="NamaDriver" value="<?php echo $this->session->userdata('Username'); ?>">
+                                        <input type="hidden" name="UpahDriver" value="<?php echo convertupah($data->BeratSampah); ?>">
+                                        <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-trash small"></i>Done</button>
+                                    </form>
+                                </td>
+                            </div>
+                        </div>
                     <?php endforeach; ?>
                 </div>
             </div>

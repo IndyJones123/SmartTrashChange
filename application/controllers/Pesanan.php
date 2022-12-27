@@ -26,4 +26,18 @@ class Pesanan extends CI_Controller
         $this->M_pesanan->insert_pesanan();
         $this->load->view('V_Home');
     }
+
+    public function update_pesanan($id_pesanan)
+    {
+        echo "<script>alert('Pesanan Telah Diselesaikan');</script>";
+        $this->M_pesanan->update_pesanan($id_pesanan);
+        $data['pesanan'] = $this->M_pesanan->get_pesanan();
+        $this->load->view('Driver/V_HomeDriver', $data);
+    }
+
+    public function delete_pesanan($id_pesanan)
+    {
+        $this->M_pesanan->delete_pesanan($id_pesanan);
+        redirect('Pesanan');
+    }
 }
