@@ -74,14 +74,12 @@
                         <p class="mt-2">Pick Up</p>
                     </div>
                 </div>
-
                 <div class="col-md-3">
                     <div class="menu-kategori">
-                        <a href="dropoff.html"><img src="<?php echo base_url(); ?>assets/assets/icon_dropoff.png" class="img-kategori" /></a>
+                        <a href="<?php echo base_url() ?>Donasi"><img src="<?php echo base_url(); ?>assets/assets/icon_dropoff.png" class="img-kategori" /></a>
                         <p class="mt-2">Donasi</p>
                     </div>
                 </div>
-
                 <div class="col-md-3">
                     <div class="menu-kategori">
                         <a href="<?php echo base_url() ?>Tentangkami"><img src="<?php echo base_url(); ?>assets/assets/ixon_ttgkami.png" class="img-kategori" /></a>
