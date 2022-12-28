@@ -44,7 +44,7 @@
 
             <ol class="guidance-rule-box bg-grey">
                 <?php foreach ($guidance as $gd) : ?>
-                    <li><?php echo $gd->nama_sampah ?> : Rp<?php echo $gd->harga_min ?> - Rp<?php echo $gd->harga_max ?></li>
+                    <li><?php echo $gd->jenis ?> : Rp<?php echo $gd->hargamin ?> - Rp<?php echo $gd->harga ?></li>
                 <?php endforeach; ?>
             </ol>
         </div>
