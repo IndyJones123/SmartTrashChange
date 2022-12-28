@@ -40,7 +40,7 @@
 
 
     <main>
-        <p class="container teks-pesanan text-center">
+        <p class="teks-pesanan">
             <a href="<?php echo base_url(); ?>home">
                 <i class="fas fa-long-arrow-alt-left"></i>
             </a>
