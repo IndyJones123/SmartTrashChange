@@ -41,7 +41,6 @@
 
     <div class="d-md-flex">
         <ul id="navbar-items" class="">
-           <ul id="navbar-items" class="p-0">
                 <li>
                     <span class="fas fa-comment-alt"></span>
                     <span class="ps-3 name"></span>
