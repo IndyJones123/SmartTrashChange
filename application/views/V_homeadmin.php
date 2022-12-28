@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Home Admin</title>
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styleadmin.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/styleadmin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -19,7 +19,6 @@
 </head>
 
 <body>
-
     <header>
         <div class="px-0 bg-light">
             <div class="d-flex">
@@ -30,13 +29,13 @@
                             <i class="fa fa-bars"></i>
                         </button>
 
-                        <span class="fas fa-bars ps-3"></span>
+                        <span class="fas fa-bars ps-4"></span>
                     </button>
                     <a class="text-decoration-none fs14 ps-3" href="<?= site_url('homeadmin') ?>">ADMIN PAGE</a>
                 </div>
 
                 <div id="navbar2" class="d-flex justify-content-end pe-4">
-                    <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+                    <i class="mt-3 fa fa-user-circle fa-2x" aria-hidden="true"></i>
                 </div>
             </div>
         </div>
@@ -113,8 +112,6 @@
                             </tr>
                             </tbody>
                         </table>
-                        </ol>
-
                     </div>
                 </div>
                 <div class="d-flex align-items-center justify-content-between px-3 mt-3">

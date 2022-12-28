@@ -16,9 +16,7 @@
 }
 
 body {
-
 	height: 100%;
-	padding: 20px;
 }
 
 .topnav {
@@ -220,20 +218,26 @@ ul li:hover .fas {
 
 /* footer */
 
-footer {
+/* footer */
+#container{
+	min-height: 100%;
 	position: relative;
-	margin-bottom: 100px;
-	bottom: 0;
-	width: 100%;
-	padding-bottom: 30px;
-	background-color: var(--secondary-color);
-	color: var(--bg-color);
 }
-
-.social-contact span {
-	font-size: 20px;
-	float: right;
-	padding-left: 15px;
+.footer{
+	position: absolute;
+	width: 99%;
+	bottom: 0;
+	padding-bottom: 40px;
+    background-color: var(--secondary-color);
+    color: var(--bg-color);
+}
+footer{
+	width: 100% !important;
+}
+.social-contact span{
+    font-size: 20px;
+    float: right;
+    padding-left: 15px;
 }
 
 /* end footer */
