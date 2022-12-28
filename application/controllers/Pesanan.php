@@ -38,6 +38,7 @@ class Pesanan extends CI_Controller
     public function delete_pesanan($id_pesanan)
     {
         $this->M_pesanan->delete_pesanan($id_pesanan);
-        redirect('Pesanan');
+        $data['pesanan'] = $this->M_pesanan->get_pesanan();
+        $this->load->view('Driver/V_HomeDriver', $data);
     }
 }

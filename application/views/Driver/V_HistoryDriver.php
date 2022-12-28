@@ -86,23 +86,6 @@
                                 <i class="fas fa-trophy"></i>
                                 <span class="reward-points pl-2"><?php echo $data->AlamatPelanggan; ?></span>
                             </div>
-
-                            <div class="d-flex justify-content-between align-items-center mt-5 pb-3">
-                                <td onclick="javascript: return confirm('Anda Yakin Hapus?')">
-                                    <form action="<?php echo base_url('Pesanan/delete_pesanan/' . $data->id_pesanan) ?>" method="post">
-                                        <input type="hidden" name="id_pesanan" value="<?= $data->id_pesanan ?>">
-                                        <button type="submit" class="btn btn-sm btn-danger"><i class="fa fa-trash small"></i>Delete</button>
-                                    </form>
-                                </td>
-                                <td onclick="javascript: return confirm('Anda Yakin Menerima Pesanan?')">
-                                    <form action="<?php echo base_url('Pesanan/update_pesanan/' . $data->id_pesanan) ?>" method="post">
-                                        <input type="hidden" name="id_pesanan" value="<?= $data->id_pesanan ?>">
-                                        <input type="hidden" name="NamaDriver" value="<?php echo $this->session->userdata('Username'); ?>">
-                                        <input type="hidden" name="UpahDriver" value="<?php echo convertupah($data->BeratSampah); ?>">
-                                        <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-trash small"></i>Done</button>
-                                    </form>
-                                </td>
-                            </div>
                         </div>
                     <?php endforeach; ?>
                 </div>
