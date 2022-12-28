@@ -16,11 +16,10 @@ class Updatesampah extends CI_Controller
         $this->load->view('V_listsampah', $data);
     }
 
-    public function tambah ()
+    public function tambah()
     {
         $data['title'] = 'Tambah Data';
         $this->load->view('V_tambahdata', $data);
-
     }
 
     public function menambah_data()
@@ -33,10 +32,7 @@ class Updatesampah extends CI_Controller
     {
         $id = $this->input->post('id');
         $this->m_admin->hapus($id);
-
-        if($this->db->affected_rows() > 0) {
-            echo "<script>alert('Data Berhasil Dihapus'); </script>";
-        }
+        redirect('updatesampah');
     }
 
     public function edit($id)
