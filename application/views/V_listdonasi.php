@@ -18,10 +18,13 @@
 
 </head>
 <!-- header -->
-<div class=" mt-lg-3 container px-3 bg-grey">
-    <div class="d-flex">
-        <div class="d-flex align-items-center " id="navbar">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+<header>
+        <div class="px-0 bg-light">
+            <div class="d-flex">
+                <div class="d-flex align-items-center " id="navbar">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="true"
+                        aria-label="Toggle navigation">
                 <!-- Sidebar toggle -->
                 <button id="sidebarToggleTop" class="btn btn-link d-md-none
                                 rounded-circle mr-3">

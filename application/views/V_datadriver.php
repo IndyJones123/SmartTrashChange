@@ -20,46 +20,62 @@
 
 <body>
     <!-- header -->
-    <div class="mt-lg-3 container px-3 bg-grey">
-        <div class="d-flex">
-            <div class="d-flex align-items-center " id="navbar">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+    <header>
+        <div class="px-0 bg-light">
+            <div class="d-flex">
+                <div class="d-flex align-items-center " id="navbar">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="true"
+                        aria-label="Toggle navigation">
 
-                    <!-- Sidebar toggle -->
-                    <button id="sidebarToggleTop" class="btn btn-link d-md-none
-                                rounded-circle mr-3">
-                        <i class="fa fa-bars"></i>
+                        <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                            <i class="fa fa-bars"></i>
+                        </button>
+
+                        <span class="fas fa-bars ps-3"></span>
                     </button>
-                    <!-- end\ -->
-                    <span class="fas fa-bars ps-3"></span>
-                </button>
-                <a class="text-decoration-none fs14 ps-3" href="<?= site_url('homeadmin') ?>">ADMIN PAGE
-                </a>
-            </div>
-            <div id="navbar2" class="d-flex justify-content-end pe-4"><i class="fa fa-user-circle fa-2x" aria-hidden="true"></i></div>
-        </div>
-        <div class="d-md-flex">
-            <ul id="navbar-items" class="">
+                    <a class="text-decoration-none fs14 ps-3" href="<?= site_url('homeadmin') ?>">ADMIN PAGE</a>
+                </div>
 
-                <li>
-                    <i class="fas fa-comment-alt px-2 ps-0"></i><a href="<?= site_url('homeadmin') ?>" class="nav-link active">History Pemesanan</a>
-                </li>
-                <li>
-                    <i class="fas fa-calendar-alt px-2 ps-0"></i><a href="<?php echo base_url(); ?>Pelanggan" class="nav-link">Data Pelanggan</a>
-                </li>
-                <li>
-                    <i class="fas fa-calendar-alt px-2 ps-0"></i><a href="<?= site_url('Datadriver') ?>" class="nav-link active">Data Driver</a>
-                </li>
-                <li>
-                    <i class="fas fa-chart-line px-2 ps-0"></i><a href="<?= site_url('updatesampah') ?>" class="nav-link">List Sampah</a>
-                </li>
-                <li>
-                    <i class="fas fa-chart-line px-2 ps-0"></i><a href="<?= site_url('Donasi/read_donasi') ?>" class="nav-link">List Donasi</a>
-                </li>
-                <li>
-                    <i class="fas fa-fw fa-sign-out-alt px-4 ps-0"></i><a href="<?= site_url('Registration/logout') ?>" class="nav-link">Logout</a>
-                </li>
-            </ul>
+                <div id="navbar2" class="d-flex justify-content-end pe-4">
+                    <i class="fa fa-user-circle fa-2x" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+    </main>
+        <div class="d-md-flex">
+            <ul id="navbar-items" class="p-0">
+                    <li>
+                        <span class="fas fa-comment-alt"></span>
+                        <span class="ps-3 name"></span>
+                        <a href="<?= site_url('homeadmin') ?>" class="nav-link active">History Pemesanan</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-calendar-alt px-2 ps-0"></i>
+                        <a href="<?php echo base_url(); ?>Pelanggan" class="nav-link">Data Pelanggan</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-calendar-alt px-2 ps-0"></i>
+                        <a href="<?= site_url('Datadriver') ?>" class="nav-link active">Data Driver</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-line px-2 ps-0"></i>
+                        <a href="<?= site_url('updatesampah') ?>" class="nav-link">List Sampah</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-chart-line px-2 ps-0"></i>
+                        <a href="<?= site_url('Donasi/read_donasi') ?>" class="nav-link">List Donasi</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-fw fa-sign-out-alt px-4 ps-0"></i>
+                        <a href="<?= site_url('Registration/logout') ?>" class="nav-link">Logout</a>
+                    </li>
+                </ul>
 
             <div id="topnavbar">
                 <div class="topnav mb-3">
