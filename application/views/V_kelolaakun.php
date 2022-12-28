@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TrashChange | AKUN</title>
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -43,7 +43,7 @@
     <!-- main start -->
     <main>
         <div class="container text-center">
-            <p class="teks-akun">Akun Saya</p>
+            <p class="teks-pesanan">Akun Saya</p>
         </div>
 
         <div class="container mt-5">
@@ -60,10 +60,8 @@
 
                             <div class="card w-75">
                                 <div class="card-body2">
-                                    <a href="#">
-                                        <img src="<?php echo base_url(); ?>assets/assets/tc-poin.png" alt="">
-                                        <p> Tc Points : <?php echo $this->session->userdata('TcPoints'); ?></p>
-                                    </a>
+                                    <img src="<?php echo base_url(); ?>assets/assets/tc-poin.png" alt="">
+                                    <span> Tc Points : <?php echo $this->session->userdata('TcPoints'); ?></span>
                                 </div>
                             </div>
 
@@ -84,40 +82,57 @@
                         </div>
                         <div class="container">
                             <div class="card-body1">
-                                <form class="row g-3" method="POST" action="<?php echo base_url(); ?>Pelanggan/update_pelanggan">
+                                <form class="row g-3" method="POST"
+                                    action="<?php echo base_url(); ?>Pelanggan/update_pelanggan">
                                     <div class="col-md-6 mt-5">
                                         <label for="nama_depan" class="form-label">ID ACCOUNT</label>
-                                        <input type="nama_depan" class="form-control" name="id_Account" id="inputnama_depan" value="<?php echo $this->session->userdata('id_Account'); ?>" readonly>
+                                        <input type="nama_depan" class="form-control" name="id_Account"
+                                            id="inputnama_depan"
+                                            value="<?php echo $this->session->userdata('id_Account'); ?>" readonly>
                                     </div>
                                     <div class="col-md-6 mt-5">
                                         <label for="nama_depan" class="form-label">Nama Depan</label>
-                                        <input type="nama_depan" class="form-control" name="namadepan" id="inputnama_depan" value="<?php echo $this->session->userdata('namadepan'); ?>">
+                                        <input type="nama_depan" class="form-control" name="namadepan"
+                                            id="inputnama_depan"
+                                            value="<?php echo $this->session->userdata('namadepan'); ?>">
                                     </div>
                                     <div class="col-md-6 mt-5">
                                         <label for="nama_belakang" class="form-label">Nama Belakang</label>
-                                        <input type="nama_belakang" class="form-control" name="namabelakang" id="inputnama_belakang" value="<?php echo $this->session->userdata('namabelakang'); ?>">
+                                        <input type="nama_belakang" class="form-control" name="namabelakang"
+                                            id="inputnama_belakang"
+                                            value="<?php echo $this->session->userdata('namabelakang'); ?>">
                                     </div>
 
                                     <div class="col-md-6 mt-5">
                                         <label for="nama_belakang" class="form-label">Jenis Kelamin (L/P)</label>
-                                        <input type="nama_belakang" class="form-control" name="jeniskelamin" id="inputnama_belakang" value="<?php echo $this->session->userdata('jeniskelamin'); ?>">
+                                        <input type="nama_belakang" class="form-control" name="jeniskelamin"
+                                            id="inputnama_belakang"
+                                            value="<?php echo $this->session->userdata('jeniskelamin'); ?>">
                                     </div>
                                     <div>
                                         <label for="exampleInputEmail1" class="form-label">Email</label>
-                                        <input type="email" class="form-control" name="Email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="example@gmail.com" value="<?php echo $this->session->userdata('Email'); ?>">
+                                        <input type="email" class="form-control" name="Email" id="exampleInputEmail1"
+                                            aria-describedby="emailHelp" placeholder="example@gmail.com"
+                                            value="<?php echo $this->session->userdata('Email'); ?>">
                                     </div>
                                     <div>
                                         <label for="exampleInputPassword1" class="form-label">Password</label>
-                                        <input type="password" class="form-control" name="Sandi" id="exampleInputPassword1" placeholder="***********" value="<?php echo $this->session->userdata('Sandi'); ?>">
+                                        <input type="password" class="form-control" name="Sandi"
+                                            id="exampleInputPassword1" placeholder="***********"
+                                            value="<?php echo $this->session->userdata('Sandi'); ?>">
                                     </div>
                                     <div>
                                         <label for="exampleInputnumber" class="form-label">No Telepon</label>
-                                        <input type="text" class="form-control" name="notelepon" id="exampleInputnumber" placeholder="08xxxxxxxx" value="<?php echo $this->session->userdata('notelepon'); ?>">
+                                        <input type="text" class="form-control" name="notelepon" id="exampleInputnumber"
+                                            placeholder="08xxxxxxxx"
+                                            value="<?php echo $this->session->userdata('notelepon'); ?>">
                                     </div>
 
                                     <div>
                                         <label for="exampleFormControlTextarea1" class="form-label">Alamat</label>
-                                        <input class="form-control" name="alamat" id="exampleFormControlTextarea1" rows="4" placeholder="Masukkan Alamat" value="<?php echo $this->session->userdata('alamat'); ?>"></input>
+                                        <input class="form-control" name="alamat" id="exampleFormControlTextarea1"
+                                            rows="4" placeholder="Masukkan Alamat"
+                                            value="<?php echo $this->session->userdata('alamat'); ?>"></input>
                                     </div>
 
                                     <div class="mb-3">
@@ -150,9 +165,12 @@
 
     <!-- footer -->
     <footer>
+
         <div id="container">
             <div class="main-content">
-
+                <div class="logo-footer">
+                    <img src="<?php echo base_url(); ?>assets/assets/logo.png" alt="">
+                </div>
                 <div class="left box">
                     <h2>About us</h2>
                     <div class="content">
@@ -167,15 +185,29 @@
                     </div>
                 </div>
 
-                <div class="center box">
-                    <h2>Anggota Kelompok</h2>
+                <div class="center1 box">
+                    <h2>Link Terkait</h2>
                     <div class="content">
-                        <ul class="list-link">
-                            <li><a href="<?php echo base_url(); ?>home" class="active"> Beranda</a></li>
-                            <li><a href="<?php echo base_url(); ?>Pemesanan/index">Transaksi</a></li>
-                            <li><a href="<?php echo base_url(); ?>Chat/index">Chat</a></li>
-                            <li><a href="<?php echo base_url(); ?>Kelolaakun/index">Kelola Akun</a></li>
-                        </ul>
+                        <div class="list-link">
+                            <li><a href="<?php echo base_url(); ?>Home">Beranda</a></li>
+                            <li><a href="<?php echo base_url(); ?>Chat/index">chat</a></li>
+                            <li><a href="<?php echo base_url(); ?>Kelolaakun/index">kelola Akun</a></li>
+                            <li><a href="<?php echo base_url(); ?>Registration/Logout">LogOut</a></li>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center box">
+                    <h2>Kelompok 10</h2>
+                    <div class="content">
+                        <div class="list-link">
+                            <a href="#">Pandu Ali W (20081010230)</a><br>
+                            <a href="#">Hanif Nur F (20081010231)</a><br>
+                            <a href="#">Ikhasanul A (20081010238)</a><br>
+                            <a href="#">Rifqi Alvian A (20081010239)</a><br>
+                            <a href="#">Desya Ristya P (20081010240)</a><br>
+                            <a href="#">Alfian Dorif M (20081010251)</a><br>
+                        </div>
                     </div>
                 </div>
 
@@ -197,6 +229,7 @@
                     </div>
                 </div>
 
+
             </div>
 
             <div class="bottom">
@@ -205,6 +238,7 @@
                     <span class="far fa-copyright"></span><span> 2022 All rights reserved.</span>
                 </center>
             </div>
+
         </div>
     </footer>
     <!-- End Footer -->
@@ -212,7 +246,8 @@
     <!--js link--->
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/script.js"></script>
     <!-- js bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
 </body>
 
