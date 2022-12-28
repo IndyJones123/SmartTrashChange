@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daftar Sampah</title>
-    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styleadmin.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/styleadmin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -13,8 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
 
 </head>
@@ -23,8 +22,7 @@
     <div class="px-0 bg-light">
         <div class="d-flex">
             <div class="d-flex align-items-center " id="navbar">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items"
-                    aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
 
                     <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                         <i class="fa fa-bars"></i>
@@ -74,10 +72,8 @@
         <div id="topnavbar">
             <div class="topnav mb-3">
             </div>
-            <div class="d-flex align-items-center mb-3 px-md-3 px-2"> <span
-                    class="text-uppercase fs13 fw-bolder pe-3 mb-3">search<span class="ps-1">by</span></span>
-                <form class="example d-flex align-items-center mb-3"> <input type="text" placeholder="Cari Sesuatu..."
-                        name="search"> <button type="submit"><i class="fa fa-search"></i></button> </form>
+            <div class="d-flex align-items-center mb-3 px-md-3 px-2"> <span class="text-uppercase fs13 fw-bolder pe-3 mb-3">search<span class="ps-1">by</span></span>
+                <form class="example d-flex align-items-center mb-3"> <input type="text" placeholder="Cari Sesuatu..." name="search"> <button type="submit"><i class="fa fa-search"></i></button> </form>
             </div>
             <div class="container text-center">
                 <p class="teks-pesanan"> Data Pelanggan </p>
@@ -95,25 +91,22 @@
                         </thead>
 
                         <?php foreach ($hosting as $data) : ?>
-                        <tr>
-                            <td><?php echo $data->id_Account ?></td>
-                            <td><?php echo $data->Username ?></td>
-                            <td><?php echo $data->Email ?></td>
-                            <td><?php echo convertrole($data->role_id) ?></td>
-                            <td><?php echo $data->date_created ?></td>
-                            <td>
-                                <a href=" <?php echo base_url('Pelanggan/update_data/' . $data->id_Account) ?>"
-                                    class="btn btn-sm btn-success"><i class="fa fa-pencil small"></i>Update</a>
-                            </td>
-                            <td onclick="javascript: return confirm('Anda Yakin Hapus?')">
-                                <form action="<?php echo base_url('Pelanggan/delete_data/' . $data->id_Account) ?>"
-                                    method="post">
-                                    <input type="hidden" name="id" value="<?= $data->id_Account ?>">
-                                    <button class="btn btn-sm btn-danger"><i
-                                            class="fa fa-trash small"></i>Delete</button>
-                                </form>
-                            </td>
-                        </tr>
+                            <tr>
+                                <td><?php echo $data->id_Account ?></td>
+                                <td><?php echo $data->Username ?></td>
+                                <td><?php echo $data->Email ?></td>
+                                <td><?php echo convertrole($data->role_id) ?></td>
+                                <td><?php echo $data->date_created ?></td>
+                                <td>
+                                    <a href=" <?php echo base_url('Pelanggan/update_data/' . $data->id_Account) ?>" class="btn btn-sm btn-success"><i class="fa fa-pencil small"></i>Update</a>
+                                </td>
+                                <td onclick="javascript: return confirm('Anda Yakin Hapus?')">
+                                    <form action="<?php echo base_url('Pelanggan/delete_data/' . $data->id_Account) ?>" method="post">
+                                        <input type="hidden" name="id" value="<?= $data->id_Account ?>">
+                                        <button class="btn btn-sm btn-danger"><i class="fa fa-trash small"></i>Delete</button>
+                                    </form>
+                                </td>
+                            </tr>
                         <?php endforeach; ?>
 
                         <div class="d-flex align-items-center justify-content-between px-3 mt-3">
@@ -138,28 +131,28 @@
 </main>
 
 
-<!-- <footer>
-        <div id="container">
-            <div class="footer py-4 mt-5">
-                <div class="row px-3">
-                    <div class="social-contact ">
-                        <small class="text-center mb-3">Copyright &copy; 2022. All rights reserved.</small>
-                        <span class="fab fa-facebook"></span>
-                        <span class="fab fa-google-plus"></span>
-                        <span class="fab fa-linkedin"></span>
-                        <span class="fab fa-twitter"></span>
-                    </div>
+
+<footer>
+    <div id="container">
+        <div class="footer py-4">
+            <div class="row px-3">
+                <div class="social-contact ">
+                    <small class="text-center mb-3">Copyright &copy; 2022. All rights reserved.</small>
+                    <span class="fab fa-facebook"></span>
+                    <span class="fab fa-google-plus"></span>
+                    <span class="fab fa-linkedin"></span>
+                    <span class="fab fa-twitter"></span>
                 </div>
             </div>
         </div>
-    </footer> -->
+    </div>
+</footer>
 
 
 <!--js link--->
 <script type="text/javascript" src="js/script.js"></script>
 <!-- js bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
 </script>
 </body>
 
