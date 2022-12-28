@@ -12,11 +12,7 @@
 	--main-color: #11db11;
 	--secondary-color: #2f5150;
 }
-body {
-	
-	height: 100%;
-	padding: 20px;
-}
+
 .topnav {
 	background-color: var(--bg-color);
 	overflow: hidden;
@@ -96,13 +92,6 @@ form.example::after {
 	margin: 20px auto;
 	overflow-x: auto;
 }
-.container .table-responsive::-webkit-scrollbar {
-	height: 5px;
-}
-.container .table-responsive::-webkit-scrollbar-thumb {
-	border-radius: 5px;
-	background-image: linear-gradient(to right, #5d7ecd, #0c91e6);
-}
 .table thead tr th {
 	font-size: 15px;
 	color: var(--main-color);
@@ -122,7 +111,6 @@ form.example::after {
 	color: var(--secondary-color);
     font-weight: bold;
 }
-
 #navbar a {
 	color: var(--bg-color);
 }
@@ -138,10 +126,17 @@ form.example::after {
 	background-color: var(--main-color);
     opacity: 0.5;
 }
+ul li a{
+	color: var(--bg-color);
+	text-decoration: none;
+}
+ul li:hover a{
+	color: var(--main-color);
+	font-weight: 500;
+}
 ul#navbar-items li {
 	color: var(--bg-color);
 	padding: 25px 35px;
-
 	font-size: 16px;
 	display: flex;
 	align-items: center;
@@ -179,16 +174,17 @@ ul li:hover .fas {
 /* end main */
 
 /* footer */
-
-footer {
-	position:relative;
-	margin-bottom: 100px;
+/* #container{
+	min-height: 100%;
+	position: relative;
+}
+.footer {
+	position: absolute;
 	bottom: 0;
 	width: 100%;
-	padding-bottom: 30px;
     background-color: var(--secondary-color);
     color: var(--bg-color);
-}
+} */
 
 .social-contact span{
     font-size: 20px;

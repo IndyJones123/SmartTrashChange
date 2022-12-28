@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TrashChange | Panduan Pengguna</title>
-    <link rel="stylesheet" href="<?php echo base_url() ?>assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -19,20 +19,19 @@
 <body>
     <!-- header -->
     <header>
-        <a href="<?php echo base_url() ?>Home" class="logo">
-            <img src="<?php echo base_url() ?>assets/assets/logo-brand.png" alt="">
+        <a href="<?php echo base_url(); ?>Home" class="logo">
+            <img src="<?php echo base_url(); ?>assets/assets/logo-brand.png" alt="">
         </a>
 
         <ul class="navbar">
-
             <li><a href="<?php echo base_url(); ?>home" class="active"> Beranda</a></li>
-            <li><a href="<?php echo base_url(); ?>Pemesanan/index">Transaksi</a></li>
-            <li><a href="<?php echo base_url(); ?>Chat/index">Chat</a></li>
+            <li><a href=" <?php echo base_url(); ?>Chat/index">Chat</a></li>
             <li><a href="<?php echo base_url(); ?>Kelolaakun/index">Kelola Akun</a></li>
+            <li><a href="<?php echo base_url(); ?>Registration/Logout">Logout</a></li>
         </ul>
         <div class="logo2">
             <a href="#">
-                <img src="<?php echo base_url() ?>assets/assets/icon-navbar.png" alt="">
+                <img src="<?php echo base_url(); ?>assets/assets/icon-navbar.png" alt="">
             </a>
         </div>
         <div class="bx bx-menu" id="menu-icon"></div>
@@ -41,9 +40,12 @@
 
 
     <main>
-        <div class="container text-center">
-            <p class="teks-pesanan">Tentang Kami</p>
-        </div>
+        <p class="teks-pesanan">
+            <a href="<?php echo base_url(); ?>home">
+                <i class="fas fa-long-arrow-alt-left"></i>
+            </a>
+            Tentang Kami
+        </p>
         <div class="container mt-5 teks-tentangkami">
             <p>
                 Pengelolaan sampah menjadi hal yang sangat penting dalam kehidupan
@@ -85,7 +87,7 @@
         <div id="container">
             <div class="main-content">
                 <div class="logo-footer">
-                    <img src="<?php echo base_url() ?>assets/assets/logo.png" alt="">
+                    <img src="<?php echo base_url(); ?>assets/assets/logo.png" alt="">
                 </div>
                 <div class="left box">
                     <h2>About us</h2>
@@ -101,15 +103,28 @@
                     </div>
                 </div>
 
-
-                <div class="center box">
-                    <h2>LINK TERKAIT</h2>
+                <div class="center1 box">
+                    <h2>Link Terkait</h2>
                     <div class="content">
                         <div class="list-link">
-                            <li><a href="<?php echo base_url(); ?>home" class="active"> Beranda</a></li>
-                            <li><a href="<?php echo base_url(); ?>Chat/index">Chat</a></li>
-                            <li><a href="<?php echo base_url(); ?>Kelolaakun/index">Kelola Akun</a></li>
-                            <li><a href="<?php echo base_url(); ?>Registration/Logout">Logout</a></li>
+                            <li><a href="<?php echo base_url(); ?>Home">Beranda</a></li>
+                            <li><a href="<?php echo base_url(); ?>Chat/index">chat</a></li>
+                            <li><a href="<?php echo base_url(); ?>Kelolaakun/index">kelola Akun</a></li>
+                            <li><a href="<?php echo base_url(); ?>Registration/Logout">LogOut</a></li>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center box">
+                    <h2>Kelompok 10</h2>
+                    <div class="content">
+                        <div class="list-link">
+                            <a href="#">Pandu Ali W (20081010230)</a><br>
+                            <a href="#">Hanif Nur F (20081010231)</a><br>
+                            <a href="#">Ikhasanul A (20081010238)</a><br>
+                            <a href="#">Rifqi Alvian A (20081010239)</a><br>
+                            <a href="#">Desya Ristya P (20081010240)</a><br>
+                            <a href="#">Alfian Dorif M (20081010251)</a><br>
                         </div>
                     </div>
                 </div>
@@ -150,7 +165,9 @@
     <!--js link--->
     <script type="text/javascript" src="<?php echo base_url() ?>assets/js/script.js"></script>
     <!-- js bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>

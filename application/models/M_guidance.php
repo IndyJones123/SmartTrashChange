@@ -23,7 +23,7 @@ class M_guidance extends CI_Model
 
     public function get_panduan_spec_jenisdanharga()
     {
-        $sql = "SELECT * FROM sampah";
+        $sql = "SELECT * FROM listsampah";
         $data = $this->db->query($sql);
         return $data->result();
     }

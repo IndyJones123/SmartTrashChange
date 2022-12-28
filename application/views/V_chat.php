@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TrashChange | CHAT</title>
-    <link rel="stylesheet" href="<?php echo base_url(); ?>View HTML/css/style.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/style.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -46,15 +46,15 @@
 
     <!-- chat -->
     <script type="text/javascript">
-        window.$crisp = [];
-        window.CRISP_WEBSITE_ID = "9df1d65f-307b-4870-9456-c77ef60b06f4";
-        (function() {
-            d = document;
-            s = d.createElement("script");
-            s.src = "https://client.crisp.chat/l.js";
-            s.async = 1;
-            d.getElementsByTagName("head")[0].appendChild(s);
-        })();
+    window.$crisp = [];
+    window.CRISP_WEBSITE_ID = "9df1d65f-307b-4870-9456-c77ef60b06f4";
+    (function() {
+        d = document;
+        s = d.createElement("script");
+        s.src = "https://client.crisp.chat/l.js";
+        s.async = 1;
+        d.getElementsByTagName("head")[0].appendChild(s);
+    })();
     </script>
 
     <div class="konten-chat text-center">
@@ -86,15 +86,29 @@
                     </div>
                 </div>
 
-                <div class="center box">
+                <div class="center1 box">
                     <h2>Link Terkait</h2>
                     <div class="content">
-                        <ul class="list-link">
+                        <div class="list-link">
                             <li><a href="<?php echo base_url(); ?>Home">Beranda</a></li>
-                            <li><a href="<?php echo base_url(); ?>Pemesanan/index">Transaksi</a></li>
                             <li><a href="<?php echo base_url(); ?>Chat/index">chat</a></li>
                             <li><a href="<?php echo base_url(); ?>Kelolaakun/index">kelola Akun</a></li>
-                        </ul>
+                            <li><a href="<?php echo base_url(); ?>Registration/Logout">LogOut</a></li>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="center box">
+                    <h2>Kelompok 10</h2>
+                    <div class="content">
+                        <div class="list-link">
+                            <a href="#">Pandu Ali W (20081010230)</a><br>
+                            <a href="#">Hanif Nur F (20081010231)</a><br>
+                            <a href="#">Ikhasanul A (20081010238)</a><br>
+                            <a href="#">Rifqi Alvian A (20081010239)</a><br>
+                            <a href="#">Desya Ristya P (20081010240)</a><br>
+                            <a href="#">Alfian Dorif M (20081010251)</a><br>
+                        </div>
                     </div>
                 </div>
 
@@ -133,7 +147,8 @@
     <!--js link--->
     <script type="text/javascript" src="<?php echo base_url(); ?>assets/js/script.js"></script>
     <!-- js bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
 </body>
 

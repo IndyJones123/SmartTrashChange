@@ -176,9 +176,12 @@ ul li:hover .fas {
 /* end main */
 
 /* footer */
-
+#footer-main{
+	min-height: 100%;
+	position: relative;
+}
 footer {
-	position:relative;
+	position: absolute;
 	margin-bottom: 100px;
 	bottom: 0;
 	width: 100%;
