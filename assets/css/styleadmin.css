@@ -60,7 +60,7 @@ body {
 }
 
 .tambahdata a {
-	margin-left: 100px !important;
+	margin-left: -100px !important;
 
 }
 

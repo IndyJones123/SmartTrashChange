@@ -13,8 +13,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
 
 </head>
@@ -25,9 +24,7 @@
         <div class="px-0 bg-light">
             <div class="d-flex">
                 <div class="d-flex align-items-center " id="navbar">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="true"
-                        aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
 
                         <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
                             <i class="fa fa-bars"></i>
@@ -82,10 +79,8 @@
                         </p>
                     </div>
                 </div>
-                <div class="d-flex align-items-center mb-3 px-md-3 px-2"> <span
-                        class="text-uppercase fs13 fw-bolder pe-3">search<span class="ps-1">by</span></span>
-                    <form class="example d-flex align-items-center"> <input type="text" placeholder="Cari Sesuatu..."
-                            name="search"> <button type="submit"><i class="fa fa-search"></i></button> </form>
+                <div class="d-flex align-items-center mb-3 px-md-3 px-2"> <span class="text-uppercase fs13 fw-bolder pe-3">search<span class="ps-1">by</span></span>
+                    <form class="example d-flex align-items-center"> <input type="text" placeholder="Cari Sesuatu..." name="search"> <button type="submit"><i class="fa fa-search"></i></button> </form>
                 </div>
                 <div class="container text-center">
                     <p class="teks-pesanan"> History Pemesanan </p>
@@ -114,8 +109,8 @@
                                     <td><?php echo $data->AlamatPelanggan ?></td>
                                     <td><?php echo $data->UpahDriver ?></td>
                                 </tr>
-                                <?php endforeach; ?>
-                                </tr>
+                            <?php endforeach; ?>
+                            </tr>
                             </tbody>
                         </table>
                         </ol>
@@ -161,8 +156,7 @@
     <!--js link--->
     <script type="text/javascript" src="js/script.js"></script>
     <!-- js bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     </script>
 </body>
 

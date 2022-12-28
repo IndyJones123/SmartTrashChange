@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Daftar Sampah</title>
-    <link rel="stylesheet" href="<?php echo base_url(); ?>/assets/css/styleadmin.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>assets/css/styleadmin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
 
@@ -132,7 +132,7 @@
 
 
 
-<footer>
+<!-- footer 
     <div id="container">
         <div class="footer py-4">
             <div class="row px-3">
@@ -146,6 +146,8 @@
             </div>
         </div>
     </div>
+
+
 </footer>
 
 
