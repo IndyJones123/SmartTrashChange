@@ -32,7 +32,10 @@ class Updatesampah extends CI_Controller
     {
         $id = $this->input->post('id');
         $this->m_admin->hapus($id);
-        redirect('updatesampah');
+        
+        if($this->db->affected_rows() > 0) {
+            echo "<script>alert('Data Berhasil Dihapus'); </script>";
+        }
     }
 
     public function edit($id)
