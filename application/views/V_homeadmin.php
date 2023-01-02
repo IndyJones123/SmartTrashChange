@@ -45,9 +45,9 @@
         <div class="d-md-flex">
             <ul id="navbar-items" class="p-0">
                 <li>
-                    <span class="fas fa-comment-alt"></span>
-                    <span class="ps-3 name"></span>
-                    <a href="<?= site_url('homeadmin') ?>" class="nav-link active">History Pemesanan</a>
+                <span class="fas fa-comment-alt"></span>
+                <span class="ps-3 name"></span>
+                <a href="<?= site_url('homeadmin') ?>" class="nav-link active">History Pemesanan</a>
                 </li>
                 <li>
                     <i class="fas fa-calendar-alt px-2 ps-0"></i>

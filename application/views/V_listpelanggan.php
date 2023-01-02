@@ -102,14 +102,12 @@
                             <td><?php echo convertrole($data->role_id) ?></td>
                             <td><?php echo $data->date_created ?></td>
                             <td>
-                                <a href=" <?php echo base_url('Pelanggan/update_data/' . $data->id_Account) ?>"
-                                    class="btn btn-sm btn-success"><i class="fa fa-pencil small"></i>Update</a>
-                            </td>
-                            <td onclick="javascript: return confirm('Anda Yakin Hapus?')">
                                 <form action="<?php echo base_url('Pelanggan/delete_data/' . $data->id_Account) ?>"
                                     method="post">
                                     <input type="hidden" name="id" value="<?= $data->id_Account ?>">
-                                    <button class="btn btn-sm btn-danger"><i
+                                    <a href=" <?php echo base_url('Pelanggan/update_data/' . $data->id_Account) ?>"
+                                    class="btn btn-sm btn-success"><i class="fa fa-pencil small"></i>Update</a>
+                                    <button onclick="javascript: return confirm('Anda Yakin Hapus?')" class="btn btn-sm btn-danger"><i
                                             class="fa fa-trash small"></i>Delete</button>
                                 </form>
                             </td>
